@@ -1,0 +1,54 @@
+:root {
+    /* --custom-text-color: whitesmoke; */
+    --custom-font: 'FiraCode Nerd Font', 'GeistMono Nerd Font', monospace;
+    /* --custom-slider-color: #d5c4a1; */
+    --custom-slider-color: #424250
+}
+
+/* .slider {
+    position: absolute !important;
+    border-radius: 2px !important;
+    background-color: var(--custom-slider-color) !important;
+}
+
+.vertical>.slider {
+    right: 1px !important;
+    width: 3px !important;
+    left: auto !important;
+}
+
+.horizontal>.slider {
+    bottom: 1px !important;
+    height: 3px !important;
+    top: auto !important;
+} */
+
+.window-appicon,
+.decorationsOverviewRuler {
+    display: none !important;
+}
+
+.monaco-tree .monaco-tree-row,
+.label-name,
+.monaco-list .monaco-list-row,
+.monaco-icon-label .label-name {
+    font-family: var(--custom-font) !important;
+}
+
+.quick-input-widget {
+    top: 20% !important;
+    border: 1px solid var(--vscode-sash-hoverBorder) !important;
+    border-radius: 4px !important;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px !important;
+}
+
+.notification-list-item.expanded {
+    border: 1px solid var(--vscode-sash-hoverBorder), !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+.title-label>h2 {
+    font-family: var(--custom-font) !important;
+    font-weight: 600 !important;
+}

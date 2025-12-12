@@ -1,0 +1,197 @@
+{
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.tabSize": 2
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "prettier.tabWidth": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "prettier.tabWidth": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.autoIndent": "keep",
+    "editor.defaultColorDecorators": "never",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "breadcrumbs.enabled": false,
+  "chat.disableAIFeatures": true,
+  "clangd.arguments": [
+    "--completion-style=detailed",
+    "--pretty",
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=never"
+  ],
+  "clangd.checkUpdates": true,
+  "custom-ui-style.external.imports": [
+    "file:///home/inqlog/dotfiles/vscode.css"
+  ],
+  "editor.bracketPairColorization.enabled": false,
+  "editor.colorDecorators": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "'CaskaydiaMono Nerd Font','FiraCode Nerd Font', 'GeistMono Nerd Font',  'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 15,
+  "editor.fontWeight": 500,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.matchBrackets": "always",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "config": "shellscript"
+  },
+  "files.autoSave": "onFocusChange",
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "keyboard.dispatch": "keyCode",
+  "prettier.arrowParens": "avoid",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.createEnvironment.trigger": "off",
+  "python.defaultInterpreterPath": "/bin/python",
+  "python.languageServer": "Pylance",
+  "redhat.telemetry.enabled": false,
+  "ruff.nativeServer": "on",
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.lens.debug.enable": false,
+  "rust-analyzer.lens.implementations.enable": false, // Small font on top
+  "rust-analyzer.lens.run.enable": false,
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "svelte.enable-ts-plugin": true,
+  "symbols.files.associations": {
+    "*.service.ts": "nest",
+    "app.module.ts": "nest"
+  },
+  "symbols.hidesExplorerArrows": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "terminal.integrated.smoothScrolling": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [":"],
+      "before": [";"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "auto",
+  "window.menuBarVisibility": "hidden",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#00ff00"
+  },
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.iconTheme": "symbols",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.indent": 20
+}

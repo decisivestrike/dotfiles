@@ -1,0 +1,11 @@
+^\.git
+^\.github
+\.swp$
+\.bak$
+._\.md
+._\.sh
+.\*\.png
+.gitignore
+
+# Other files
+vscode.css
