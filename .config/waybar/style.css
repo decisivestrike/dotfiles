@@ -1,0 +1,103 @@
+@define-color bg rgba(18, 18, 18, 0.9);
+@define-color bgg #1d2021;
+
+* {
+  all: unset;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-radius: 3px;
+  font-family: "GeistMono Nerd Font Propo";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: @bg;
+  border-radius: 0px;
+}
+
+tooltip {
+  color: #ddc7a1;
+  background-color: @bg;
+  border: 2px solid #7c6f64;
+}
+
+#tray menu {
+  color: #ddc7a1;
+  background-color: @bg;
+  border: 2px solid #7c6f64;
+  padding: 4px 6px;
+}
+
+#mpris {
+  color: #d4be98;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#network,
+#temperature,
+#wireplumber,
+#window,
+#language {
+  margin: 2px;
+  padding: 2px 8px;
+}
+
+#workspaces {
+  background-color: #ddc7a1;
+  margin: 2px;
+  margin-left: 8px;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+
+#workspaces button {
+  padding: 2px 6px;
+  color: #d4be98;
+}
+
+#workspaces button.focused {
+  background-color: #303536;
+}
+
+#workspaces button.urgent {
+  background-color: #e78a4e;
+}
+
+#workspaces button.active {
+  background-color: #ddc7a1;
+  color: #303536;
+}
+
+#clock {
+  background-color: #303536;
+  margin-right: 8px;
+  color: #d4be98;
+}
+
+#tray {
+  background-color: #d4be98;
+}
+
+#cpu,
+#tray,
+#clock,
+#memory,
+#network,
+#temperature,
+#language,
+#workspaces,
+#wireplumber {
+  background-color: @bgg;
+  color: #d4be98;
+}
+
+#cpu.critical,
+#memory.critical {
+  background-color: #ddc7a1;
+  color: #c14a4a;
+}
