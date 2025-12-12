@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="$HOME/Pictures/wallpapers/anime"
+WALLPAPER_DIR="$HOME/Pictures/wallpapers/unsorted"
 CURRENT_WALL=$(swww query | awk '{print $8}')
 
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n1)
