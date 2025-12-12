@@ -102,7 +102,7 @@
   ],
   "clangd.checkUpdates": true,
   "custom-ui-style.external.imports": [
-    "file:///home/inqlog/dotfiles/vscode.css"
+    "file:///home/inqlog/.dotfiles/vscode.css"
   ],
   "editor.bracketPairColorization.enabled": false,
   "editor.colorDecorators": false,
@@ -179,7 +179,6 @@
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
-  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#00ff00"
   },
@@ -193,5 +192,6 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "workbench.activityBar.location": "hidden"
 }
