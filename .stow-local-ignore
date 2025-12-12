@@ -2,9 +2,9 @@
 ^\.github
 \.swp$
 \.bak$
-._\.md
-._\.sh
-.\*\.png
+.*\.md
+.*\.sh
+.*\.png
 .gitignore
 
 # Other files
