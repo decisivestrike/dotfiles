@@ -3,8 +3,6 @@
 \.swp$
 \.bak$
 .*\.md
-.*\.sh
-.*\.png
 .gitignore
 
 # Other files
