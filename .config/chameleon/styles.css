@@ -1,14 +1,22 @@
 /* Блюр настраивается через ваш композитор */
 
+@define-color bg rgba(18, 18, 18, 0.9);
+@define-color bgg #1d2021;
+
 * {
+    all: unset;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-radius: 3px;
+    font-family: "Iosevka Nerd Font Propo";
+    font-weight: 500;
     font-size: 15px;
-    font-family: "GeistMono Nerd Font Propo";
-    font-weight: 600;
 }
 
 #bar {
-    border-top: 1px solid rgba(70, 71, 76, 0.3);
-    background-color: rgba(18, 18, 25, 0.6);
+    background-color: @bg;
+    border-radius: 0px;
 }
 
 .module {
@@ -17,38 +25,33 @@
 }
 
 #workspaces {
-    margin-left: 1px;
+    background-color: @bgg;
+    color: #d4be98;
+    margin: 2px;
+    margin-left: 8px;
+    border-radius: 2px;
+    padding: 2px 4px;
 }
 
 #workspaces label {
-    margin: 2px 1px;
-    padding: 3px 10px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    color: #888888;
-    transition: background-color 0.3s;
+    padding: 2px 6px;
+    color: #d4be98;
+}
+
+#workspaces label.focused {
+    background-color: #303536;
+}
+
+#workspaces label.urgent {
+    background-color: #e78a4e;
 }
 
 #workspaces label.active {
-    color: whitesmoke;
-    border-color: rgba(70, 71, 76, 0.3);
-    box-shadow:
-        0 4px 24px 0 rgba(0, 0, 0, 0.1),
-        inset 0 1.5px 7px 0 rgba(255, 255, 255, 0.21);
+    background-color: #ddc7a1;
+    color: #303536;
 }
 
 #workspaces label:hover {
     background-color: rgba(70, 71, 76, 0.3);
     transition: background-color 0.3s;
-}
-
-popover>contents {
-    background: rgba(120, 110, 130, 0.6);
-    border-radius: 16px;
-    padding: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow:
-        0 4px 24px 0 rgba(0, 0, 0, 0.1),
-        inset 0 1.5px 7px 0 rgba(255, 255, 255, 0.28),
-        inset 0 4px 8px 0 rgba(255, 255, 255, 0.1);
 }

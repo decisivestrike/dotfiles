@@ -1,0 +1,18 @@
+theme = Adventure
+
+font-family = DepartureMono Nerd Font Propo
+font-size = 13
+shell-integration = zsh
+
+window-padding-x = 4
+window-padding-y = 4
+
+selection-clear-on-copy = true
+
+background-opacity = 0.7
+custom-shader = crt.glsl
+
+background = #201825
+
+keybind = performable:ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard

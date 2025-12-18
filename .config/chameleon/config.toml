@@ -3,7 +3,9 @@ enabled = true
 
 [taskbar]
 enabled = true
-position = "top"
+spacing = 10
+# thickness = 0
+position = "bottom"
 modules_left = ["workspaces"]
 modules_center = []
 modules_right = ["battery", "clock"]
@@ -15,3 +17,4 @@ format = "{icon} {charge}%"
 
 [taskbar.clock]
 format = "%a %e %b %H:%M"
+# format = "%H:%M"
