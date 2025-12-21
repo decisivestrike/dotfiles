@@ -1,12 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GDK_BACKEND=wayland
 
-ZSH_THEME="my_eastwood"    
-
-# ### PROXY ###
-# HTTP_PROXY="http://127.0.0.1:10801"
-# HTTPS_PROXY="http://127.0.0.1:10801"
-# ALL_PROXY="socks5://127.0.0.1:10808"
+ZSH_THEME="my_eastwood"
 
 plugins=(git uv)
 
@@ -21,7 +16,6 @@ alias pipes="pipes.sh"
 
 ### COMMANDS ###
 alias reload-waybar="killall -SIGUSR2 waybar"
-alias uwu="clear && uwufetch"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias large-files="du -ahx . | sort -rh | head -n20"
 alias gpu-temp="nvidia-smi --query-gpu=temperature.gpu --format=noheader"

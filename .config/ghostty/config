@@ -11,7 +11,7 @@ window-padding-y = 4
 
 selection-clear-on-copy = true
 
-background-opacity = 0.7
+background-opacity = 0.8
 
 custom-shader = crt.glsl
 
