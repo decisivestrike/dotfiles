@@ -193,5 +193,9 @@
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "notebook.markup.fontSize": 12,
+  "notebook.markup.fontFamily": "12",
+  "notebook.output.fontFamily": "12",
+  "notebook.output.fontSize": 12
 }
