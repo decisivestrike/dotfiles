@@ -197,5 +197,6 @@
   "notebook.markup.fontSize": 12,
   "notebook.markup.fontFamily": "12",
   "notebook.output.fontFamily": "12",
-  "notebook.output.fontSize": 12
+  "notebook.output.fontSize": 12,
+  "notebook.lineNumbers": "on"
 }

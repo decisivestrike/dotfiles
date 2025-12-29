@@ -2,17 +2,16 @@
 @define-color bgg #1d2021;
 
 * {
-  all: unset;
   padding: 0px;
   margin: 0px;
   border: none;
   border-radius: 3px;
   font-family: "GeistMono Nerd Font Propo";
-  font-weight: 600;
   font-size: 15px;
 }
 
 window#waybar {
+  font-weight: 600;
   background-color: @bg;
   border-radius: 0px;
 }
@@ -48,6 +47,7 @@ tooltip {
 }
 
 #workspaces {
+  font-weight: 500;
   background-color: #ddc7a1;
   margin: 2px;
   margin-left: 8px;
