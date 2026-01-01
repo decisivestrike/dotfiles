@@ -152,6 +152,7 @@
   "svelte.enable-ts-plugin": true,
   "symbols.files.associations": {
     "*.service.ts": "nest",
+    "*.module.ts": "nest",
     "app.module.ts": "nest"
   },
   "symbols.hidesExplorerArrows": false,
