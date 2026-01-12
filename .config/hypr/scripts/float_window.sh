@@ -23,7 +23,9 @@ handle() {
     fi
 }
 
-case $window in
-  kitty) handle "50%" "35%" ;;
-  *) handle "80%" "75%" ;;
-esac
+# case $window in
+#   kitty) handle "50%" "35%" ;;
+#   *) handle "90%" "90%" ;;
+# esac
+
+handle "90%" "90%"
