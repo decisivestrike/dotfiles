@@ -3,7 +3,7 @@
   "icon_theme": "Zed (Default)",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
 
   "diagnostics": {
@@ -11,15 +11,15 @@
     "include_warnings": true,
     "lsp_pull_diagnostics": {
       "enabled": true,
-      "debounce_ms": 50
+      "debounce_ms": 50,
     },
     "inline": {
       "enabled": true,
       "update_debounce_ms": 150,
       "padding": 4,
       "min_column": 60,
-      "max_severity": "warning"
-    }
+      "max_severity": "warning",
+    },
   },
 
   "inlay_hints": { "enabled": false },
@@ -27,7 +27,7 @@
   "auto_install_extensions": {
     "html": true,
     "dockerfile": true,
-    "docker-compose": true
+    "docker-compose": true,
   },
 
   "base_keymap": null,
@@ -42,19 +42,19 @@
   "scroll_beyond_last_line": "one_page",
   "vertical_scroll_margin": 0,
 
-  "ui_font_family": "Iosevka Nerd Font",
-  "ui_font_size": 20,
-  "ui_font_weight": 500,
+  "ui_font_family": "FiraCode Nerd Font",
+  "ui_font_size": 17,
+  "ui_font_weight": 400,
 
   "buffer_line_height": { "custom": 1.35 },
   "buffer_font_size": 18,
-  "buffer_font_family": "FiraCode Nerd Font",
-  "buffer_font_weight": 550,
+  "buffer_font_family": "CaskaydiaMono Nerd Font",
+  "buffer_font_weight": 400,
   "buffer_font_features": {
-    "calt": false
+    "calt": false,
   },
 
-  "theme": "Ayu Dark",
+  "theme": "Dayfox - opaque",
 
   "agent": { "button": false },
 
@@ -65,10 +65,10 @@
     "font_family": "Iosevka Nerd Font",
     "font_weight": 500,
     "toolbar": {
-      "breadcrumbs": false
+      "breadcrumbs": false,
     },
     "button": false,
-    "scrollbar": { "show": "never" }
+    "scrollbar": { "show": "never" },
   },
 
   "toolbar": {
@@ -76,18 +76,18 @@
     "quick_actions": false,
     "selections_menu": false,
     "agent_review": false,
-    "code_actions": false
+    "code_actions": false,
   },
 
   "active_pane_modifiers": {
     "border_size": 2.0,
-    "inactive_opacity": 0.5
+    "inactive_opacity": 0.5,
   },
 
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
 
   "project_panel": {
@@ -102,14 +102,14 @@
     "auto_reveal_entries": true,
     "auto_fold_dirs": true,
     "scrollbar": {
-      "show": "never"
+      "show": "never",
     },
     "show_diagnostics": "all",
     "indent_guides": {
-      "show": "always"
+      "show": "always",
     },
     "hide_root": false,
-    "sticky_scroll": false
+    "sticky_scroll": false,
   },
 
   "outline_panel": {
@@ -123,18 +123,18 @@
     "auto_reveal_entries": true,
     "auto_fold_dirs": true,
     "indent_guides": {
-      "show": "always"
+      "show": "always",
     },
     "scrollbar": {
-      "show": null
-    }
+      "show": null,
+    },
   },
 
   "tabs": {
     "file_icons": false,
     "git_status": true,
     "show_close_button": "hidden",
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
 
   "notification_panel": { "button": false },
@@ -145,10 +145,10 @@
       "enabled": true,
       "min_column": 100,
       "delay_ms": 500,
-      "show_commit_summary": true
+      "show_commit_summary": true,
     },
     "hunk_style": "staged_hollow",
-    "gutter_debounce": 0
+    "gutter_debounce": 0,
   },
 
   "git_panel": { "button": false },
@@ -162,31 +162,31 @@
     "show_menus": false,
     "show_branch_name": false,
     "show_onboarding_banner": false,
-    "show_project_items": false
+    "show_project_items": false,
   },
 
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "none",
   },
 
   "languages": {
     "JavaScript": {},
     "Make": {
-      "hard_tabs": true
+      "hard_tabs": true,
     },
     "Python": {
       "language_servers": ["ruff"],
       "format_on_save": "on",
       "formatter": [
         {
-          "code_action": "source.organizeImports.ruff"
+          "code_action": "source.organizeImports.ruff",
         },
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
+            "name": "ruff",
+          },
+        },
+      ],
     },
     "SQL": {
       "format_on_save": "on",
@@ -197,9 +197,9 @@
             "--language",
             "postgresql",
             "-c",
-            "{ \"useTabs\": true, \"keywordCase\": \"upper\",\"functionCase\": \"upper\" }"
-          ]
-        }
+            "{ \"useTabs\": true, \"keywordCase\": \"upper\",\"functionCase\": \"upper\" }",
+          ],
+        },
         // "external": {
         //   "command": "pg_format",
         //   "arguments": [
@@ -212,8 +212,8 @@
         //     "80"
         //   ]
         // }
-      }
-    }
+      },
+    },
   },
   "lsp": {
     "clangd": {
@@ -224,19 +224,19 @@
           "--pretty",
           "--background-index",
           "--clang-tidy",
-          "--header-insertion=never"
-        ]
-      }
+          "--header-insertion=never",
+        ],
+      },
     },
     "ruff": {
       "initialization_options": {
         "settings": {
           "lineLength": 80,
           "lint": {
-            "extendSelect": ["I"]
-          }
-        }
-      }
-    }
-  }
+            "extendSelect": ["I"],
+          },
+        },
+      },
+    },
+  },
 }

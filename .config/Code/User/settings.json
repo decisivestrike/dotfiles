@@ -194,10 +194,11 @@
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
-  "workbench.activityBar.location": "hidden",
   "notebook.markup.fontSize": 12,
   "notebook.markup.fontFamily": "12",
   "notebook.output.fontFamily": "12",
   "notebook.output.fontSize": 12,
-  "notebook.lineNumbers": "on"
+  "notebook.lineNumbers": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.activityBar.location": "hidden"
 }
