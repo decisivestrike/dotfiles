@@ -26,3 +26,6 @@ alias gpu-temp="nvidia-smi --query-gpu=temperature.gpu --format=noheader"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# fnm
+eval "$(fnm env --use-on-cd --shell zsh)"

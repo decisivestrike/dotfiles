@@ -1,14 +1,14 @@
 {
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "vscode.css-language-features",
   },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
@@ -17,66 +17,66 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true
+      "strings": true,
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers",
     "editor.quickSuggestions": {
-      "strings": true
-    }
+      "strings": true,
+    },
   },
   "[go.mod]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.insertSpaces": false,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
     },
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[sql]": {
-    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false,
@@ -87,9 +87,13 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true
+      "strings": true,
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
+    "editor.tabSize": 2,
   },
   "breadcrumbs.enabled": false,
   "chat.disableAIFeatures": true,
@@ -98,11 +102,11 @@
     "--pretty",
     "--background-index",
     "--clang-tidy",
-    "--header-insertion=never"
+    "--header-insertion=never",
   ],
   "clangd.checkUpdates": true,
   "custom-ui-style.external.imports": [
-    "file:///home/inqlog/.dotfiles/vscode.css"
+    "file:///home/inqlog/.dotfiles/vscode.css",
   ],
   "editor.bracketPairColorization.enabled": false,
   "editor.colorDecorators": false,
@@ -122,11 +126,11 @@
   "explorer.confirmPasteNative": false,
   "extensions.autoCheckUpdates": false,
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1,
   },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "config": "shellscript"
+    "config": "shellscript",
   },
   "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
@@ -136,7 +140,7 @@
   "prettier.arrowParens": "avoid",
   "python.analysis.typeCheckingMode": "standard",
   "python.createEnvironment.trigger": "off",
-  "python.defaultInterpreterPath": "/bin/python",
+  "python.defaultInterpreterPath": "/sbin/python3.14",
   "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
   "ruff.nativeServer": "on",
@@ -153,35 +157,21 @@
   "symbols.files.associations": {
     "*.service.ts": "nest",
     "*.module.ts": "nest",
-    "app.module.ts": "nest"
+    "*.guard.ts": "nest",
+    "app.module.ts": "nest",
   },
   "symbols.hidesExplorerArrows": false,
   "tailwindCSS.includeLanguages": {
-    "plaintext": "html"
+    "plaintext": "html",
   },
   "terminal.integrated.smoothScrolling": true,
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "after": [":"],
-      "before": [";"]
-    },
-    {
-      "before": ["<tab>"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      "before": ["<S-tab>"],
-      "commands": ["workbench.action.previousEditor"]
-    }
-  ],
-  "vim.useSystemClipboard": true,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#00ff00"
+    "editorBracketHighlight.foreground1": "#00ff00",
   },
   "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.editorActionsLocation": "hidden",
@@ -200,5 +190,7 @@
   "notebook.output.fontSize": 12,
   "notebook.lineNumbers": "on",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "typescript.updateImportsOnPaste.enabled": true,
+  "vue.editor.templateInterpolationDecorators": false,
 }

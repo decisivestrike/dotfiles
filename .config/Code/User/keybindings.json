@@ -3,17 +3,25 @@
   {
     "key": "ctrl+shift+alt+b",
     "command": "workbench.action.tasks.build",
-    "when": "taskCommandsRegistered"
+    "when": "taskCommandsRegistered",
   },
   {
     "key": "ctrl+shift+b",
     "command": "-workbench.action.tasks.build",
-    "when": "taskCommandsRegistered"
+    "when": "taskCommandsRegistered",
   },
   {
     "key": "ctrl+shift+b",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  }
+    "command": "workbench.action.toggleActivityBarVisibility",
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.scm.focus",
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-editor.action.announceCursorPosition",
+  },
   //   {
   //     "key": "cmd+c",
   //     "command": "editor.action.clipboardCopyAction"
