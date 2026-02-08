@@ -1,7 +1,7 @@
 [widgets]
 enabled = true
 
-[taskbar]
+[panel]
 enabled = true
 spacing = 10
 # thickness = 0
@@ -10,11 +10,11 @@ modules_left = ["workspaces"]
 modules_center = []
 modules_right = ["battery", "clock"]
 
-[taskbar.battery]
+[panel.battery]
 icons = ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
 name = "BAT1"
 format = "ahah {icon} {charge}%"
 
-[taskbar.clock]
+[panel.clock]
 format = "%a %e %b %H:%M"
 # format = "%H:%M"

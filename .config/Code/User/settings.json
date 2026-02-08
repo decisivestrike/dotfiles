@@ -193,4 +193,6 @@
   "workbench.activityBar.location": "hidden",
   "typescript.updateImportsOnPaste.enabled": true,
   "vue.editor.templateInterpolationDecorators": false,
+  "vue.format.script.initialIndent": true,
+  "vue.format.style.initialIndent": true,
 }
