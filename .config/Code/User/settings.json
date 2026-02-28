@@ -92,8 +92,22 @@
     "editor.tabSize": 2,
   },
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar",
-    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.oxc": "always",
+    },
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off",
+    },
   },
   "breadcrumbs.enabled": false,
   "chat.disableAIFeatures": true,
@@ -131,6 +145,7 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "config": "shellscript",
+    "*.css": "tailwindcss",
   },
   "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
@@ -195,4 +210,24 @@
   "vue.editor.templateInterpolationDecorators": false,
   "vue.format.script.initialIndent": true,
   "vue.format.style.initialIndent": true,
+  "colorize.include": [
+    "**/*.vue",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.styl",
+  ],
+  "oxc.typeAware": true,
+  "editor.quickSuggestions": {
+    "strings": "on",
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://ui.shadcn.com": true,
+  },
 }

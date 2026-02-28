@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GDK_BACKEND=wayland
+export ANDROID_HOME="/opt/android-sdk"
 
 ZSH_THEME="my_eastwood"
 
