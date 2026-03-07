@@ -13,7 +13,7 @@ selection-clear-on-copy = true
 
 background-opacity = 0.8
 
-# custom-shader = crt.glsl
+custom-shader = crt.glsl
 
 background = #201825
 

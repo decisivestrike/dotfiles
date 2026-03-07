@@ -14,7 +14,27 @@
     font-size: 15px;
 }
 
-#bar {
+scrolledwindow {
+    color: whitesmoke;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+entry {
+    border: 1px solid white;
+    padding: 4px 8px;
+    background-color: @bgg;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+#launcher {
+    background-color: @bg;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#panel {
     background-color: @bg;
     border-radius: 0px;
 }
