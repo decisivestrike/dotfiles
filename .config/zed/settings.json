@@ -5,7 +5,7 @@
     "mute_on_join": true,
   },
   "use_system_path_prompts": false,
-  "disable_ai": true,
+  "disable_ai": false,
   "autosave": "on_focus_change",
   "icon_theme": "Catppuccin Latte",
   "telemetry": {
@@ -47,7 +47,7 @@
   "scrollbar": { "show": "auto" },
   "relative_line_numbers": "disabled",
   "scroll_beyond_last_line": "one_page",
-  "vertical_scroll_margin": 0,
+  "vertical_scroll_margin": 4,
 
   "ui_font_family": "FiraCode Nerd Font",
   "ui_font_size": 17,
@@ -63,7 +63,16 @@
 
   "theme": "VSCode Light Modern",
 
-  "agent": { "enable_feedback": false, "button": false },
+  "agent": {
+    "default_model": {
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "enable_thinking": false
+    },
+    "enable_feedback": false,
+    "button": true,
+    "dock": "right",
+  },
 
   "debugger": { "button": false },
 
@@ -82,8 +91,8 @@
     "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": false,
-    "agent_review": false,
-    "code_actions": false,
+    "agent_review": true,
+    "code_actions": true,
   },
 
   "active_pane_modifiers": {
@@ -140,7 +149,7 @@
   },
 
   "tabs": {
-    "file_icons": false,
+    "file_icons": true,
     "git_status": true,
     "show_close_button": "hidden",
     "show_diagnostics": "errors",
@@ -160,16 +169,16 @@
     "gutter_debounce": 0,
   },
 
-  "git_panel": { "button": false },
+  "git_panel": { "button": false, "status_style": "icon" },
 
   "collaboration_panel": { "button": false },
 
   "title_bar": {
-    "show_branch_icon": false,
+    "show_branch_icon": true,
     "show_sign_in": false,
     "show_user_picture": false,
     "show_menus": false,
-    "show_branch_name": false,
+    "show_branch_name": true,
     "show_onboarding_banner": false,
     "show_project_items": false,
   },
@@ -221,6 +230,22 @@
     },
   },
   "lsp": {
+    "ruff": {},
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
     "clangd": {
       "binary": {
         "path": "/usr/bin/clangd",
@@ -231,16 +256,6 @@
           "--clang-tidy",
           "--header-insertion=never",
         ],
-      },
-    },
-    "ruff": {
-      "initialization_options": {
-        "settings": {
-          "lineLength": 80,
-          "lint": {
-            "extendSelect": ["I"],
-          },
-        },
       },
     },
   },

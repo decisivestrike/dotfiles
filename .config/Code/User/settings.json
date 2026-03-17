@@ -230,4 +230,5 @@
     "https://json-schema.org/": true,
     "https://ui.shadcn.com": true,
   },
+  "editor.codeLensFontFamily": "CaskaydiaMono Nerd Font",
 }
