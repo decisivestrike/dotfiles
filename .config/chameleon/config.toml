@@ -18,3 +18,9 @@ format = "ahah {icon} {charge}%"
 [panel.clock]
 format = "%a %e %b %H:%M"
 # format = "%H:%M"
+
+[launcher]
+enabled = true
+placeholder = "let's find something..."
+terminal_cmd = "kitty"
+detach = true

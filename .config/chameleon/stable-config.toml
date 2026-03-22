@@ -1,5 +1,2 @@
-[widgets]
-enabled = false
-
-[panel]
-enabled = false
+[launcher]
+enabled = true

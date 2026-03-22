@@ -1,7 +1,15 @@
 /* Блюр настраивается через ваш композитор */
 
-@define-color bg rgba(18, 18, 18, 0.9);
-@define-color bgg #1d2021;
+:root {
+    --background-color: #121212;
+    --background-color-80: rgba(12, 12, 12, 0.8);
+    --text-primary: #E0E0E0;
+    --text-secondary: #B0B0B0;
+
+    --panel-background-primary: rgba(18, 18, 18, 0.9);
+    --panel-background-secondary: #1d2021;
+    --panel-text-primary: #d4be98;
+}
 
 * {
     padding: 0px;
@@ -16,7 +24,7 @@
 #launcher {
     font-size: 18px;
     padding: 8px;
-    background-color: rgba(12, 12, 12, 0.8);
+    background-color: var(--background-color-80);
     border-radius: 8px;
 }
 
@@ -25,21 +33,28 @@ entry {
     border: none;
     background-color: rgba(44, 44, 44, 0.4);
     border-radius: 6px;
-    color: #B0B0B0;
+    color: var(--text-secondary);
     padding: 4px 8px;
     margin-bottom: 8px;
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-scrolledwindow {
-    border: 1px solid #444444;
-    border-radius: 6px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+entry placeholder {
+    color: #444444;
 }
 
 listview {
     padding: 2px;
     border-radius: 6px;
+}
+
+.app {
+    padding: 8px;
+}
+
+.comment {
+    font-size: 14px;
+    color: #B0B0B0;
 }
 
 scrolledwindow scrollbar {
@@ -50,10 +65,12 @@ scrolledwindow scrollbar slider {
     background-color: transparent;
 }
 
+
+
 /* Panel */
 #panel {
     font-size: 15.7px;
-    background-color: @bg;
+    background-color: var(--panel-background-primary);
     border-radius: 0px;
 }
 
@@ -63,8 +80,8 @@ scrolledwindow scrollbar slider {
 }
 
 #workspaces {
-    background-color: @bgg;
-    color: #d4be98;
+    background-color: var(--panel-background-secondary);
+    color: var(--panel-text-primary);
     margin: 2px;
     margin-left: 8px;
     border-radius: 2px;
@@ -73,7 +90,7 @@ scrolledwindow scrollbar slider {
 
 #workspaces label {
     padding: 2px 6px;
-    color: #d4be98;
+    color: var(--panel-text-primary);
 }
 
 #workspaces label.focused {
@@ -89,7 +106,7 @@ scrolledwindow scrollbar slider {
     color: #303536;
 }
 
-#workspaces label:hover {
+#workspaces label:not(.active):hover {
     background-color: rgba(70, 71, 76, 0.3);
     transition: background-color 0.3s;
 }
