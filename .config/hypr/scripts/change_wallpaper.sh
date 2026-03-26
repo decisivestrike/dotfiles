@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers/unsorted"
-CURRENT_WALL=$(swww query | awk '{print $8}')
+CURRENT_WALL=$(awww query | awk '{print $8}')
 
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n1)
 
-swww img --transition-fps 120 \
+awww img --transition-fps 120 \
 	--transition-type fade \
 	--transition-duration 1 \
 	--transition-step 1 \
