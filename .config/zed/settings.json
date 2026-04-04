@@ -64,10 +64,11 @@
   "theme": "VSCode Light Modern",
 
   "agent": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "deepseek",
       "model": "deepseek-chat",
-      "enable_thinking": false
+      "enable_thinking": false,
     },
     "enable_feedback": false,
     "button": true,
@@ -184,7 +185,11 @@
   },
 
   "languages": {
-    "JavaScript": {},
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
     "Make": {
       "hard_tabs": true,
     },
@@ -230,6 +235,18 @@
     },
   },
   "lsp": {
+    "eslint": {
+      "settings": {
+        "codeActionOnSave": {
+          "rules": ["import/order"],
+        },
+      },
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
     "ruff": {},
     "vtsls": {
       "settings": {

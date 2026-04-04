@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
+  { "key": "ctrl+q", "command": "" },
   {
     "key": "ctrl+shift+alt+b",
     "command": "workbench.action.tasks.build",
