@@ -179,9 +179,10 @@
   },
   "terminal.integrated.smoothScrolling": true,
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "auto",
+  "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "native",
+  "window.menuStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#00ff00",
@@ -230,4 +231,5 @@
   "workbench.colorTheme": "Light Modern",
   "vue.editor.templateInterpolationDecorators": false,
   "breadcrumbs.enabled": false,
+  "workbench.browser.showInTitleBar": false,
 }
