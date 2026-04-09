@@ -138,9 +138,6 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
   "extensions.autoCheckUpdates": false,
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
-  },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "config": "shellscript",
@@ -203,7 +200,6 @@
   "notebook.output.fontSize": 12,
   "notebook.lineNumbers": "on",
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "hidden",
   "js/ts.updateImportsOnPaste.enabled": true,
   "vue.format.script.initialIndent": true,
   "vue.format.style.initialIndent": true,
@@ -214,6 +210,7 @@
     "**/*.sass",
     "**/*.less",
     "**/*.styl",
+    "**/*.kdl",
   ],
   "oxc.typeAware": true,
   "editor.quickSuggestions": {
@@ -232,4 +229,11 @@
   "vue.editor.templateInterpolationDecorators": false,
   "breadcrumbs.enabled": false,
   "workbench.browser.showInTitleBar": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal",
+  ],
+  "kilo-code.new.autocomplete.enableAutoTrigger": false,
+  "kilo-code.new.language": "en",
+  "workbench.activityBar.location": "hidden",
 }

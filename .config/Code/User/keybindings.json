@@ -1,6 +1,9 @@
 // Place your key bindings in this file to override the defaults
 [
-  { "key": "ctrl+q", "command": "" },
+  {
+    "key": "ctrl+n",
+    "command": "extension.advancedNewFile",
+  },
   {
     "key": "ctrl+shift+alt+b",
     "command": "workbench.action.tasks.build",
@@ -23,12 +26,8 @@
     "key": "ctrl+shift+g",
     "command": "-editor.action.announceCursorPosition",
   },
-  //   {
-  //     "key": "cmd+c",
-  //     "command": "editor.action.clipboardCopyAction"
-  //   },
-  //   {
-  //     "key": "cmd+v",
-  //     "command": "editor.action.clipboardPasteAction"
-  //   }
+  {
+    "key": "ctrl+q",
+    "command": "qwen-code.openChat",
+  },
 ]
