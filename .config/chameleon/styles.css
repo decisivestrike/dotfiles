@@ -110,3 +110,17 @@ scrolledwindow scrollbar slider {
     background-color: rgba(70, 71, 76, 0.3);
     transition: background-color 0.3s;
 }
+
+/* Notifications */
+#notification {
+    padding: 8px 20px;
+    color: var(--panel-text-primary);
+    font-size: 14px;
+    border: 6px;
+    background-color: var(--background-color-80);
+}
+
+#title {
+    font-size: 16.6px;
+    font-weight: 700;
+}
