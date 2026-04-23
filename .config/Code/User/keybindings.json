@@ -30,4 +30,8 @@
     "key": "ctrl+q",
     "command": "qwen-code.openChat",
   },
+  {
+    "key": "ctrl+shift+alt+m",
+    "command": "rust-analyzer.expandMacro",
+  },
 ]

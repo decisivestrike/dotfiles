@@ -8,11 +8,13 @@ plugins=(git uv)
 source $ZSH/oh-my-zsh.sh
 
 ### APPS ###
+alias ff="fastfetch"
 alias ls='lsd'
 alias hx='helix'
 alias zed="zeditor"
 alias matrix="tmatrix --background=default -s 60 --fall-speed=0.1,0.2 --title='D E C I S I V E S T R I K E'"
 alias pipes="pipes.sh"
+alias bonsai="cbonsai"
 
 ### COMMANDS ###
 alias reload-waybar="killall -SIGUSR2 waybar"

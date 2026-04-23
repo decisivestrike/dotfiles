@@ -1,14 +1,14 @@
 {
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format",
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
@@ -17,66 +17,84 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true,
+      "strings": true
     },
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers",
     "editor.quickSuggestions": {
-      "strings": true,
-    },
+      "strings": true
+    }
   },
   "[go.mod]": {
-    "editor.defaultFormatter": "golang.go",
+    "editor.defaultFormatter": "golang.go"
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.insertSpaces": false,
-    "editor.tabSize": 4,
+    "editor.tabSize": 4
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2,
+    "prettier.tabWidth": 2
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit",
+      "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[sql]": {
-    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode",
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2,
+    "prettier.tabWidth": 2
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.oxc": "always"
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false,
@@ -87,41 +105,31 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true,
+      "strings": true
     },
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
-  "[vue]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.oxc": "always",
-    },
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off",
-    },
-  },
+  "breadcrumbs.enabled": false,
   "chat.disableAIFeatures": true,
   "clangd.arguments": [
     "--completion-style=detailed",
     "--pretty",
     "--background-index",
     "--clang-tidy",
-    "--header-insertion=never",
+    "--header-insertion=never"
   ],
   "clangd.checkUpdates": true,
-  "custom-ui-style.external.imports": [
-    "file:///home/inqlog/.dotfiles/vscode.css",
+  "colorize.include": [
+    "**/*.vue",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.styl",
+    "**/*.kdl"
   ],
   "editor.bracketPairColorization.enabled": false,
+  "editor.codeLensFontFamily": "CaskaydiaMono Nerd Font",
   "editor.colorDecorators": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "'Iosevka Nerd Font','FiraCode Nerd Font','CaskaydiaMono Nerd Font','GeistMono Nerd Font',  'Droid Sans Mono', 'monospace', monospace",
@@ -132,6 +140,9 @@
   "editor.inlayHints.enabled": "off",
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
   "explorer.confirmDelete": false,
@@ -140,14 +151,33 @@
   "extensions.autoCheckUpdates": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "config": "shellscript",
     "*.css": "tailwindcss",
+    "config": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnPaste.enabled": true,
+  "json.format.enable": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://ui.shadcn.com": true,
+    "https://biomejs.dev": true
+  },
   "keyboard.dispatch": "keyCode",
-  "prettier.arrowParens": "avoid",
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontFamily": "12",
+  "notebook.markup.fontSize": 12,
+  "notebook.output.fontFamily": "12",
+  "notebook.output.fontSize": 12,
   "python.analysis.typeCheckingMode": "standard",
   "python.createEnvironment.trigger": "off",
   "python.defaultInterpreterPath": "/sbin/python3.14",
@@ -161,29 +191,40 @@
   "rust-analyzer.lens.debug.enable": false,
   "rust-analyzer.lens.implementations.enable": false, // Small font on top
   "rust-analyzer.lens.run.enable": false,
+  "rust-analyzer.rustfmt.extraArgs": ["+nightly"],
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.untrustedFiles": "newWindow",
   "svelte.enable-ts-plugin": true,
   "symbols.files.associations": {
-    "*.service.ts": "nest",
-    "*.module.ts": "nest",
     "*.guard.ts": "nest",
-    "app.module.ts": "nest",
+    "*.module.ts": "nest",
+    "*.service.ts": "nest",
+    "app.module.ts": "nest"
   },
   "symbols.hidesExplorerArrows": false,
   "tailwindCSS.includeLanguages": {
-    "plaintext": "html",
+    "plaintext": "html"
   },
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal"
+  ],
   "terminal.integrated.smoothScrolling": true,
+  "vue.editor.templateInterpolationDecorators": false,
+  "vue.format.script.initialIndent": true,
+  "vue.format.style.initialIndent": true,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "hidden",
-  "window.titleBarStyle": "native",
   "window.menuStyle": "custom",
+  "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
+  "workbench.browser.showInTitleBar": false,
   "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#00ff00",
+    "editorBracketHighlight.foreground1": "#00ff00"
   },
+  "workbench.colorTheme": "Light Modern",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.showTabs": "multiple",
@@ -194,46 +235,9 @@
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
-  "notebook.markup.fontSize": 12,
-  "notebook.markup.fontFamily": "12",
-  "notebook.output.fontFamily": "12",
-  "notebook.output.fontSize": 12,
-  "notebook.lineNumbers": "on",
-  "js/ts.updateImportsOnFileMove.enabled": "always",
-  "js/ts.updateImportsOnPaste.enabled": true,
-  "vue.format.script.initialIndent": true,
-  "vue.format.style.initialIndent": true,
-  "colorize.include": [
-    "**/*.vue",
-    "**/*.css",
-    "**/*.scss",
-    "**/*.sass",
-    "**/*.less",
-    "**/*.styl",
-    "**/*.kdl",
-  ],
-  "oxc.typeAware": true,
-  "editor.quickSuggestions": {
-    "strings": "on",
+  "biome.suggestInstallingGlobally": false,
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
-    "https://ui.shadcn.com": true,
-  },
-  "editor.codeLensFontFamily": "CaskaydiaMono Nerd Font",
-  "workbench.colorTheme": "Light Modern",
-  "vue.editor.templateInterpolationDecorators": false,
-  "breadcrumbs.enabled": false,
-  "workbench.browser.showInTitleBar": false,
-  "terminal.integrated.commandsToSkipShell": [
-    "kilo-code.new.agentManagerOpen",
-    "kilo-code.new.agentManager.showTerminal",
-  ],
-  "kilo-code.new.autocomplete.enableAutoTrigger": false,
-  "kilo-code.new.language": "en",
-  "workbench.activityBar.location": "hidden",
+  "oxc.requireConfig": true
 }

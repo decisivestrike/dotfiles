@@ -1,126 +1,138 @@
 /* Блюр настраивается через ваш композитор */
 
 :root {
-    --background-color: #121212;
-    --background-color-80: rgba(12, 12, 12, 0.9);
-    --text-primary: #E0E0E0;
-    --text-secondary: #B0B0B0;
+  --background-color: #121212;
+  --background-color-80: rgba(12, 12, 12, 0.9);
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
 
-    --panel-background-primary: rgba(18, 18, 18, 0.9);
-    --panel-background-secondary: #1d2021;
-    --panel-text-primary: #d4be98;
+  --panel-background-primary: rgba(18, 18, 18, 0.9);
+  --panel-background-secondary: #1d2021;
+  --panel-text-primary: #d4be98;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
-    border: none;
-    border-radius: 3px;
-    font-family: "Iosevka Nerd Font Propo";
-    font-weight: 500;
+  all: unset;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Iosevka Nerd Font Propo";
+  font-weight: 500;
 }
 
 /* Launcher */
 #launcher {
-    font-size: 18px;
-    padding: 8px;
-    background-color: var(--background-color-80);
-    border-radius: 8px;
+  font-size: 18px;
+  padding: 8px;
+  background-color: var(--background-color-80);
+  border-radius: 8px;
 }
 
 entry {
-    all: unset;
-    border: none;
-    background-color: rgba(44, 44, 44, 0.4);
-    border-radius: 6px;
-    color: var(--text-secondary);
-    padding: 4px 8px;
-    margin-bottom: 8px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  all: unset;
+  border: none;
+  background-color: rgba(44, 44, 44, 0.4);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 entry placeholder {
-    color: #444444;
+  color: #444444;
 }
 
 listview {
-    padding: 2px;
-    border-radius: 6px;
+  padding: 2px;
+  border-radius: 6px;
 }
 
 .app {
-    padding: 8px;
+  padding: 8px;
 }
 
 .comment {
-    font-size: 14px;
-    color: #B0B0B0;
+  font-size: 14px;
+  color: #b0b0b0;
 }
 
 scrolledwindow scrollbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 scrolledwindow scrollbar slider {
-    background-color: transparent;
+  background-color: transparent;
 }
-
-
 
 /* Panel */
 #panel {
-    font-size: 15.7px;
-    background-color: var(--panel-background-primary);
-    border-radius: 0px;
+  font-size: 15.7px;
+  background-color: var(--panel-background-primary);
+  border-radius: 0px;
 }
 
 .module {
-    margin-left: 8px;
-    margin-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #workspaces {
-    background-color: var(--panel-background-secondary);
-    color: var(--panel-text-primary);
-    margin: 2px;
-    margin-left: 8px;
-    border-radius: 2px;
-    padding: 2px 4px;
+  background-color: var(--panel-background-secondary);
+  margin: 2px;
+  margin-left: 8px;
+  border-radius: 2px;
+  padding: 2px 4px;
 }
 
 #workspaces label {
-    padding: 2px 6px;
-    color: var(--panel-text-primary);
+  padding: 2px 6px;
+  font-weight: 700;
+  color: var(--panel-text-primary);
 }
 
 #workspaces label.focused {
-    background-color: #303536;
+  background-color: #303536;
 }
 
 #workspaces label.urgent {
-    background-color: #e78a4e;
+  background-color: #e78a4e;
 }
 
 #workspaces label.active {
-    background-color: #ddc7a1;
-    color: #303536;
+  background-color: #ddc7a1;
+  color: #303536;
 }
 
 #workspaces label:not(.active):hover {
-    background-color: rgba(70, 71, 76, 0.3);
-    transition: background-color 0.3s;
+  background-color: rgba(70, 71, 76, 0.3);
+  transition: background-color 0.3s;
 }
 
 /* Notifications */
 #notification {
-    padding: 8px 20px;
-    color: var(--panel-text-primary);
-    font-size: 14px;
-    border: 6px;
-    background-color: var(--background-color-80);
+  padding: 8px 20px;
+  color: var(--panel-text-primary);
+  font-size: 14px;
+  border: 6px;
+  border-radius: 8px;
+  background-color: var(--background-color-80);
 }
 
-#title {
-    font-size: 16.6px;
-    font-weight: 700;
+#summary {
+  font-size: 16.6px;
+  font-weight: 700;
+}
+
+#notification.low {
+  border-left: 3px solid gray;
+}
+
+#notification.normal {
+  border-left: 3px solid lightblue;
+}
+
+#notification.critical {
+  border-left: 3px solid red;
 }
