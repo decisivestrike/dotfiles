@@ -81,6 +81,9 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
@@ -111,6 +114,7 @@
     },
     "editor.tabSize": 2
   },
+  "biome.suggestInstallingGlobally": false,
   "breadcrumbs.enabled": false,
   "chat.disableAIFeatures": true,
   "clangd.arguments": [
@@ -163,23 +167,25 @@
   "js/ts.updateImportsOnPaste.enabled": true,
   "json.format.enable": true,
   "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/microsoft/vscode/": true,
-    "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
+    "https://biomejs.dev": true,
     "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
     "https://raw.githubusercontent.com/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
     "https://ui.shadcn.com": true,
-    "https://biomejs.dev": true
+    "https://www.schemastore.org/": true
   },
-  "keyboard.dispatch": "keyCode",
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.workspace.library": ["/usr/share/nvim/runtime/lua"],
   "notebook.lineNumbers": "on",
   "notebook.markup.fontFamily": "12",
   "notebook.markup.fontSize": 12,
   "notebook.output.fontFamily": "12",
   "notebook.output.fontSize": 12,
+  "oxc.requireConfig": true,
   "python.analysis.typeCheckingMode": "standard",
   "python.createEnvironment.trigger": "off",
   "python.defaultInterpreterPath": "/sbin/python3.14",
@@ -236,10 +242,5 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 20,
-  "biome.suggestInstallingGlobally": false,
-  "[tailwindcss]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "oxc.requireConfig": true
+  "workbench.tree.indent": 20
 }
