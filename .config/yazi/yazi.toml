@@ -1,0 +1,15 @@
+[mgr]
+ratio = [3, 4, 5]
+sort_by = "alphabetical"
+sort_dir_first = true
+show_hidden = true
+show_symlink = true
+
+[opener]
+open = [{ run = "xdg-open %s1", desc = "Open" }]
+play = [{ run = "mpv %s", orphan = true }]
+edit = [{ run = "nvim %s", block = true, desc = "neovim" }]
+view = [{ run = "eog %s", orphan = true, desc = "eye of gnome" }]
+
+[open]
+rules = [{ mime = "text/*", use = "edit" }, { mime = "image/*", use = "view" }]
