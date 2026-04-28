@@ -69,7 +69,7 @@ require("dashboard").setup({
         },
         shortcut = {
             {
-                icon = ' ',
+                icon = ' ',
                 desc = 'Files',
                 group = 'Label',
                 action = "FzfLua files",
