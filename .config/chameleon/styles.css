@@ -19,6 +19,10 @@
   border-radius: 3px;
   font-family: "Iosevka Nerd Font Propo";
   font-weight: 500;
+  -gtk-dpi: 96;
+  line-height: 1.0;
+  font-kerning: none;
+  font-variant-ligatures: none;
 }
 
 /* Launcher */

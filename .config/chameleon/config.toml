@@ -22,9 +22,3 @@ format = "%a %e %b %H:%M"
 [panel.workspaces]
 numeral_system = "japanese"
 # numeral_variant = "financial"
-
-[launcher]
-enabled = true
-placeholder = "let's find something..."
-terminal_cmd = "kitty"
-detach = true

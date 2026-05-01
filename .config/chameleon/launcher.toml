@@ -1,0 +1,4 @@
+enabled = true
+placeholder = "hmm..."
+terminal_cmd = "kitty"
+detach = true
