@@ -63,8 +63,8 @@
   "agent": {
     "default_profile": "ask",
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat",
+      "provider": "openai",
+      "model": "o3-mini",
       "enable_thinking": false
     },
     "enable_feedback": false,
