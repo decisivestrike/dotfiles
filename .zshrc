@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GDK_BACKEND=wayland
+export PATH="$HOME/go/bin:$PATH"
 
 ZSH_THEME="my_eastwood"
 
