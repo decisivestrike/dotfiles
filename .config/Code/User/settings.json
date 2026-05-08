@@ -180,6 +180,8 @@
     "https://developer.microsoft.com/json-schemas/": true,
     "https://json-schema.org/": true,
     "https://json.schemastore.org/": true,
+    "https://models.dev/model-schema.json": true,
+    "https://opencode.ai": true,
     "https://raw.githubusercontent.com/": true,
     "https://raw.githubusercontent.com/devcontainers/spec/": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
@@ -222,10 +224,6 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
-  "terminal.integrated.commandsToSkipShell": [
-    "kilo-code.new.agentManagerOpen",
-    "kilo-code.new.agentManager.showTerminal"
-  ],
   "terminal.integrated.smoothScrolling": true,
   "vue.editor.templateInterpolationDecorators": false,
   "vue.format.script.initialIndent": true,
@@ -236,7 +234,6 @@
   "window.menuStyle": "custom",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
-  "workbench.activityBar.location": "hidden",
   "workbench.browser.showInTitleBar": false,
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#00ff00"
@@ -251,5 +248,7 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "keyboard.dispatch": "keyCode",
+  "workbench.activityBar.location": "hidden"
 }

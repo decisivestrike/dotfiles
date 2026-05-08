@@ -1,24 +1,22 @@
-[widgets]
-enabled = true
-
-[panel]
 enabled = true
 spacing = 10
 # thickness = 0
 position = "top"
-modules_left = ["workspaces"]
-modules_center = []
-modules_right = ["keyboard_layout", "pulseaudio", "clock"]
 
-[panel.battery]
+[modules]
+left = ["workspaces"]
+center = []
+right = ["keyboard_layout", "pulseaudio", "clock"]
+
+[battery]
 icons = ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
 name = "BAT1"
 # format = "ahah {icon} {charge}%"
 
-[panel.clock]
+[clock]
 format = "%a %e %b %H:%M"
 # format = "%H:%M"
 
-[panel.workspaces]
+[workspaces]
 numeral_system = "japanese"
 # numeral_variant = "financial"

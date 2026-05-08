@@ -1,6 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GDK_BACKEND=wayland
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
+export PATH="$HOME/.lmstudio/bin:$PATH"
+export PATH="$HOME/.chameleon/bin:$PATH"
 
 ZSH_THEME="my_eastwood"
 
@@ -24,11 +27,8 @@ alias large-files="du -ahx . | sort -rh | head -n20"
 alias gpu-temp="nvidia-smi --query-gpu=temperature.gpu --format=noheader"
 
 # bun completions
-[ -s "/home/inqlog/.bun/_bun" ] && source "/home/inqlog/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # fnm
 eval "$(fnm env --use-on-cd --shell zsh)"
+

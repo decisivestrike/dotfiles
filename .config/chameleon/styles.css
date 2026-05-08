@@ -5,7 +5,6 @@
   --background-color-80: rgba(12, 12, 12, 0.9);
   --text-primary: #e0e0e0;
   --text-secondary: #b0b0b0;
-
   --panel-background-primary: rgba(18, 18, 18, 0.9);
   --panel-background-secondary: #1d2021;
   --panel-text-primary: #d4be98;
@@ -20,7 +19,7 @@
   font-family: "Iosevka Nerd Font Propo";
   font-weight: 500;
   -gtk-dpi: 96;
-  line-height: 1.0;
+  line-height: 1;
   font-kerning: none;
   font-variant-ligatures: none;
 }
@@ -35,13 +34,14 @@
 
 entry {
   all: unset;
+  font-family: "Iosevka Nerd Font Mono";
   border: none;
-  background-color: rgba(44, 44, 44, 0.4);
+  /* background-color: rgba(44, 44, 44, 0.4); */
   border-radius: 6px;
   color: var(--text-secondary);
   padding: 4px 8px;
   margin-bottom: 8px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  /* box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2); */
 }
 
 entry placeholder {

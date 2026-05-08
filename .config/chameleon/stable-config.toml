@@ -1,5 +1,0 @@
-[launcher]
-enabled = true
-placeholder = "let's find something..."
-terminal_cmd = "kitty"
-detach = true
