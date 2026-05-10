@@ -6,8 +6,9 @@ CURRENT_WALL=$(awww query | awk '{print $8}')
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n1)
 
 awww img --transition-fps 120 \
-	--transition-type fade \
-	--transition-duration 1 \
-	--transition-step 1 \
-	--transition-bezier 1.0,0.0,0.8,1.0 \
+	--transition-type wipe \
+	--transition-angle 30 \
+	--transition-duration 0.8 \
+	--transition-step 40 \
+	--transition-bezier 0.42,0.0,1.0,1.0 \
 	"$WALLPAPER"

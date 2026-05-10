@@ -1,12 +1,11 @@
-enabled = true
 spacing = 10
 # thickness = 0
 position = "top"
 
 [modules]
-left = ["workspaces"]
+left = ["separator", "workspaces", "separator"]
 center = []
-right = ["keyboard_layout", "pulseaudio", "clock"]
+right = ["keyboard_layout", "separator", "pulseaudio", "separator", "clock"]
 
 [battery]
 icons = ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
@@ -14,7 +13,7 @@ name = "BAT1"
 # format = "ahah {icon} {charge}%"
 
 [clock]
-format = "%a %e %b %H:%M"
+format = "%a, %b %e %H:%M"
 # format = "%H:%M"
 
 [workspaces]

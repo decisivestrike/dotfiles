@@ -5,9 +5,9 @@
   --background-color-80: rgba(12, 12, 12, 0.9);
   --text-primary: #e0e0e0;
   --text-secondary: #b0b0b0;
-  --panel-background-primary: rgba(18, 18, 18, 0.9);
+  --panel-background-primary: rgba(18, 18, 18, 0.8);
   --panel-background-secondary: #1d2021;
-  --panel-text-primary: #d4be98;
+  --separator-color: #323232;
 }
 
 * {
@@ -72,18 +72,28 @@ scrolledwindow scrollbar slider {
 
 /* Panel */
 #panel {
-  font-size: 15.7px;
+  font-size: 15px;
   background-color: var(--panel-background-primary);
   border-radius: 0px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.5);
+}
+
+separator.vertical {
+  background-color: var(--separator-color);
+  border: 1px;
+  min-width: 1px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .module {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 #workspaces {
-  background-color: var(--panel-background-secondary);
+  font-size: 14px;
   margin: 2px;
   margin-left: 8px;
   border-radius: 2px;
@@ -92,8 +102,8 @@ scrolledwindow scrollbar slider {
 
 #workspaces label {
   padding: 2px 6px;
-  font-weight: 700;
-  color: var(--panel-text-primary);
+  font-weight: 500;
+  color: #525252;
 }
 
 #workspaces label.focused {
@@ -105,13 +115,26 @@ scrolledwindow scrollbar slider {
 }
 
 #workspaces label.active {
-  background-color: #ddc7a1;
-  color: #303536;
+  font-size: 15px;
+  color: white;
 }
 
 #workspaces label:not(.active):hover {
   background-color: rgba(70, 71, 76, 0.3);
   transition: background-color 0.3s;
+}
+
+#keyboard-layout {
+  color: white;
+}
+
+#pulseaudio {
+  color: white;
+}
+
+#clock {
+  margin-right: 10px;
+  color: white;
 }
 
 /* Notifications */
@@ -139,4 +162,13 @@ scrolledwindow scrollbar slider {
 
 #notification.critical {
   border-left: 3px solid red;
+}
+
+/* Widgets */
+#wow {
+  font-size: 48px;
+  color: whitesmoke;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 8px;
 }
