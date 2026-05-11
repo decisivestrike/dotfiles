@@ -5,7 +5,7 @@
   --background-color-80: rgba(12, 12, 12, 0.9);
   --text-primary: #e0e0e0;
   --text-secondary: #b0b0b0;
-  --panel-background-primary: rgba(18, 18, 18, 0.8);
+  --panel-background-primary: rgba(18, 18, 18, 0.85);
   --panel-background-secondary: #1d2021;
   --separator-color: #323232;
 }
@@ -15,7 +15,7 @@
   padding: 0px;
   margin: 0px;
   border: none;
-  border-radius: 3px;
+  border-radius: 0px;
   font-family: "Iosevka Nerd Font Propo";
   font-weight: 500;
   -gtk-dpi: 96;
@@ -75,7 +75,6 @@ scrolledwindow scrollbar slider {
   font-size: 15px;
   background-color: var(--panel-background-primary);
   border-radius: 0px;
-  margin-bottom: 5px;
   border-bottom: 1px solid rgba(12, 12, 12, 0.5);
 }
 
@@ -93,7 +92,6 @@ separator.vertical {
 }
 
 #workspaces {
-  font-size: 14px;
   margin: 2px;
   margin-left: 8px;
   border-radius: 2px;
@@ -115,7 +113,7 @@ separator.vertical {
 }
 
 #workspaces label.active {
-  font-size: 15px;
+  font-weight: 600;
   color: white;
 }
 
@@ -139,29 +137,43 @@ separator.vertical {
 
 /* Notifications */
 #notification {
-  padding: 8px 20px;
-  color: var(--panel-text-primary);
+  padding: 6px 12px;
+  color: whitesmoke;
   font-size: 14px;
-  border: 6px;
-  border-radius: 8px;
+  border: 3px solid transparent;
+  border-radius: 0px;
   background-color: var(--background-color-80);
+  box-shadow: #121212 1px 1px 2px 2px;
+}
+
+/* #text-container {
+  background-color: yellow;
+} */
+
+#icon {
+  margin-right: 10px;
 }
 
 #summary {
   font-size: 16.6px;
   font-weight: 700;
+  margin-bottom: 4px;
+}
+
+#body {
+  font-size: 14px;
 }
 
 #notification.low {
-  border-left: 3px solid gray;
+  border-color: gray;
 }
 
 #notification.normal {
-  border-left: 3px solid lightblue;
+  border-color: rgb(126, 160, 164);
 }
 
 #notification.critical {
-  border-left: 3px solid red;
+  border-color: red;
 }
 
 /* Widgets */

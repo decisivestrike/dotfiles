@@ -1,4 +1,4 @@
 enabled = true
-placeholder = "hmm..."
+placeholder = "Search..."
 terminal_cmd = "kitty"
 detach = true

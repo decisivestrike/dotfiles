@@ -3,7 +3,7 @@ spacing = 10
 position = "top"
 
 [modules]
-left = ["separator", "workspaces", "separator"]
+left = ["workspaces", "separator"]
 center = []
 right = ["keyboard_layout", "separator", "pulseaudio", "separator", "clock"]
 
@@ -17,5 +17,5 @@ format = "%a, %b %e %H:%M"
 # format = "%H:%M"
 
 [workspaces]
-numeral_system = "japanese"
+# numeral_system = "japanese"
 # numeral_variant = "financial"
