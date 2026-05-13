@@ -189,8 +189,11 @@
     "https://ui.shadcn.com": true,
     "https://www.schemastore.org/": true
   },
-  "Lua.diagnostics.globals": ["vim"],
-  "Lua.workspace.library": ["/usr/share/nvim/runtime/lua"],
+  "Lua.diagnostics.globals": ["vim", "hl"],
+  "Lua.workspace.library": [
+    "/usr/share/nvim/runtime/lua",
+    "/usr/share/hypr/stubs"
+  ],
   "notebook.lineNumbers": "on",
   "notebook.markup.fontFamily": "12",
   "notebook.markup.fontSize": 12,
