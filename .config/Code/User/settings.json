@@ -45,7 +45,7 @@
       "strings": "on"
     },
     "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "sumneko.lua"
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
