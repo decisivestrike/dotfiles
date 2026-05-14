@@ -5,6 +5,7 @@ local focus = hl.dsp.focus
 local shared = require("hyprland.shared")
 local terminal = shared.terminal
 local file_manager = shared.file_manager
+local color_picker = shared.color_picker
 
 local main_mod = "SUPER"
 
@@ -42,6 +43,7 @@ bind(main_mod .. " + P", window.pseudo())
 bind(main_mod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
 -- Utils
+bind(main_mod .. "+ SHIFT + P", hl.dsp.exec_cmd(color_picker))
 bind(main_mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Program shortcuts
@@ -61,6 +63,13 @@ hl.bind(
 	hl.dsp.exec_raw("bash -c ~/.config/hypr/scripts/change_wallpaper.sh")
 )
 hl.bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))
+
+-- Screenshot
+bind(main_mod .. "+ Print", hl.dsp.exec_cmd("grim - | wl-copy"))
+bind(
+	main_mod .. "+ SHIFT + Print",
+	hl.dsp.exec_cmd('grim -g "$(slurp -w 1 -c 000000ff -b 00000080)" - | wl-copy')
+)
 
 -- Move focus
 bind(main_mod .. " + left", focus({ direction = "left" }))
