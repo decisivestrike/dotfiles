@@ -7,14 +7,7 @@ hl.monitor({
 	scale = 1,
 })
 
-local terminal = "kitty"
-local file_manager = "nautilus"
-local hyprpicker = "hyprpicker -a --format=rgb -t -d"
-
-local chameleon_bin = "~/.chameleon/bin/"
-local launcher = chameleon_bin .. "chameleon-launcher"
-local notifications_daemon = chameleon_bin .. "chameleon-notifications"
-local panel = chameleon_bin .. "chameleon-panel"
+local shared = require("hyprland.shared")
 
 -- AUTOSTART --
 hl.on("hyprland.start", function()
@@ -22,10 +15,10 @@ hl.on("hyprland.start", function()
 	sh("awww-daemon")
 	sh("hypridle")
 	sh("hyprsunset")
-	sh(notifications_daemon)
-	sh(launcher)
-	sh(panel)
-	sh(terminal)
+	sh(shared.notification_daemon)
+	sh(shared.launcher)
+	sh(shared.panel)
+	sh(shared.terminal)
 end)
 
 -- ENVIRONMENT VARIABLES --
@@ -47,6 +40,10 @@ hl.config({
 	general = {
 		gaps_in = 5,
 		gaps_out = { top = 5, left = 10, right = 8, bottom = 10 },
+		col = {
+			active_border = "rgba(606060aa)",
+			inactive_border = "rgba(404040aa)",
+		},
 		border_size = 0,
 		layout = "dwindle",
 		resize_on_border = true,
@@ -75,7 +72,10 @@ hl.config({
 			scale = 1.0,
 		},
 	},
-	animations = { enabled = true },
+	animations = {
+		enabled = true,
+		workspace_wraparound = false,
+	},
 	input = {
 		kb_layout = "us,ru",
 		kb_options = "caps:swapescape, grp:shifts_toggle",
