@@ -1,4 +1,4 @@
-theme = "gruvbox-material"
+theme = "kanagawa"
 
 [editor]
 line-number = "relative"
@@ -34,3 +34,9 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
+
+
+### KEYS ###
+[keys.normal]
+";" = "command_mode"
+C-s = ":write"
