@@ -1,6 +1,8 @@
 local bind = hl.bind
 local window = hl.dsp.window
 local focus = hl.dsp.focus
+local dispatch = hl.dispatch
+local send_shortcut = hl.dsp.send_shortcut
 
 local shared = require("hyprland.shared")
 local terminal = shared.terminal
@@ -28,13 +30,13 @@ bind(main_mod .. " + V", function()
 
 	if win == nil then
 		-- hl.exec_cmd('notify-send -t 2000 "Nothing can\'t be float!"')
-		hl.dispatch(hl.dsp.exec_raw('notify-send -t 2000 "Nothing can\'t be float!"'))
+		dispatch(hl.dsp.exec_raw('notify-send -t 2000 "Nothing can\'t be float!"'))
 	elseif win.floating then
-		hl.dispatch(window.float({ action = "unset" }))
+		dispatch(window.float({ action = "unset" }))
 	else
-		hl.dispatch(window.float({ action = "set" }))
-		hl.dispatch(window.resize({ x = 1760, y = 990 }))
-		hl.dispatch(window.center())
+		dispatch(window.float({ action = "set" }))
+		dispatch(window.resize({ x = 1760, y = 990 }))
+		dispatch(window.center())
 	end
 end, { description = "Toggle floating" })
 
@@ -45,8 +47,6 @@ bind(main_mod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 -- Utils
 bind(main_mod .. "+ SHIFT + P", hl.dsp.exec_cmd(color_picker))
 bind(main_mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-
--- Program shortcuts
 bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
 bind(main_mod .. " + T", hl.dsp.exec_cmd(terminal))
 
@@ -54,15 +54,22 @@ bind(main_mod .. " + T", hl.dsp.exec_cmd(terminal))
 -- hl.bind(mainMod .. " + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$" }))
 bind(
 	main_mod .. " + M",
-	hl.dsp.send_shortcut({ mods = main_mod, key = "SHIFT + M", window = "class:discord" })
+	send_shortcut({
+		mods = "CTRL + SHIFT",
+		key = "M",
+		window = "class:^(discord)$",
+	}, {
+		transparent = true,
+		submap_universal = true,
+		description = "Discord Mic",
+	})
 )
 
--- Scripts
-hl.bind(
+bind(
 	main_mod .. "+ SHIFT + W",
 	hl.dsp.exec_raw("bash -c ~/.config/hypr/scripts/change_wallpaper.sh")
 )
-hl.bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))
+bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))
 
 -- Screenshot
 bind(main_mod .. "+ Print", hl.dsp.exec_cmd("grim - | wl-copy"))
@@ -106,16 +113,16 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(main_mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
-hl.bind(main_mod .. " + SHIFT + S", window.move({ workspace = "special:magic" }))
+bind(main_mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
+bind(main_mod .. " + SHIFT + S", window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
-hl.bind(main_mod .. " + mouse_down", focus({ workspace = "r+1" }))
-hl.bind(main_mod .. " + mouse_up", focus({ workspace = "r-1" }))
+bind(main_mod .. " + mouse_down", focus({ workspace = "r+1" }))
+bind(main_mod .. " + mouse_up", focus({ workspace = "r-1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
-hl.bind(main_mod .. " + mouse:272", window.drag(), { mouse = true })
-hl.bind(main_mod .. " + mouse:273", window.resize(), { mouse = true })
+bind(main_mod .. " + mouse:272", window.drag(), { mouse = true })
+bind(main_mod .. " + mouse:273", window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(
