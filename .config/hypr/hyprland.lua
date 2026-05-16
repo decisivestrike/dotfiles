@@ -19,6 +19,7 @@ hl.on("hyprland.start", function()
 	sh(shared.launcher)
 	sh(shared.panel)
 	sh(shared.terminal)
+	sh("systemctl --user start hyprpolkitagent")
 end)
 
 -- ENVIRONMENT VARIABLES --
