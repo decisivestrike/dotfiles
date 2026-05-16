@@ -1,7 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GDK_BACKEND=wayland
 export PATH="$HOME/go/bin:$PATH"
-export PATH="$HOME/.bun/bin:$PATH"
 export PATH="$HOME/.lmstudio/bin:$PATH"
 export PATH="$HOME/.chameleon/bin:$PATH"
 
@@ -25,9 +24,6 @@ alias reload-waybar="killall -SIGUSR2 waybar"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias large-files="du -ahx . | sort -rh | head -n20"
 alias gpu-temp="nvidia-smi --query-gpu=temperature.gpu --format=noheader"
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # fnm
 eval "$(fnm env --use-on-cd --shell zsh)"
