@@ -72,9 +72,9 @@ bind(
 bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))
 
 -- Screenshot
-bind(main_mod .. "+ Print", hl.dsp.exec_cmd("grim - | wl-copy"))
+bind("Print", hl.dsp.exec_cmd("grim - | wl-copy"))
 bind(
-	main_mod .. "+ SHIFT + Print",
+	"SHIFT + Print",
 	hl.dsp.exec_cmd('grim -g "$(slurp -w 1 -c 000000ff -b 00000080)" - | wl-copy')
 )
 

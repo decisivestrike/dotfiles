@@ -11,7 +11,6 @@ local shared = require("hyprland.shared")
 
 -- AUTOSTART --
 hl.on("hyprland.start", function()
-	sh("xray -c ~/.config/xray/config.json")
 	sh("awww-daemon")
 	sh("hypridle")
 	sh("hyprsunset")
