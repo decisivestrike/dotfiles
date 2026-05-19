@@ -1,4 +1,4 @@
-theme = "gruvbox-material"
+theme = "simple-kanagawa"
 
 [editor]
 line-number = "relative"
