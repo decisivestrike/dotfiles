@@ -5,13 +5,13 @@ alias gc='git commit --verbose'
 alias gp='git push'
 
 # Better ls
-alias ls='lsd'
-alias l='lsd -l'
-alias la='lsd -a'
-alias lla='lsd -la'
-alias lt='lsd --tree'
+alias ls='eza --icons'
+alias ll='eza -lh --icons --git'
+alias la='eza -ah --icons --git'
+alias lla='eza -lah --icons --git'
+alias tree='eza --tree --icons'
 
-compdef lsd=ls
+compdef eza=ls
 
 # Core utils
 alias grep='rg --color=auto'
@@ -20,9 +20,7 @@ alias df='df -h'
 
 # Shortcuts
 alias ff="fastfetch"
-alias ls='lsd'
 alias hx='helix'
-alias zed="zeditor"
 alias matrix="tmatrix --background=default -s 60 --fall-speed=0.1,0.2 --title='D E C I S I V E S T R I K E'"
 alias pipes="pipes.sh"
 alias bonsai="cbonsai"
