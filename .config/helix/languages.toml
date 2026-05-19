@@ -2,6 +2,14 @@
 command = "rust-analyzer"
 
 [[language]]
+name = "go"
+auto-format = true
+
+[[language]]
+name = "lua"
+auto-format = true
+
+[[language]]
 name = "rust"
 language-servers = ["rust-analyzer"]
 auto-format = true

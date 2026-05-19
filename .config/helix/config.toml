@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "gruvbox-material"
 
 [editor]
 line-number = "relative"
@@ -33,3 +33,4 @@ workspace-diagnostics = ["warning", "error"]
 [keys.normal]
 # ";" = "command_mode"
 C-s = ":write"
+C-g = [":new", ":insert-output lazygit", ":buffer-close", ":redraw"]
