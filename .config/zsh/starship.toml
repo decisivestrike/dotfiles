@@ -1,0 +1,24 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Eastwood like prompt
+format = "$git_status$git_branch$directory$character"
+add_newline = false
+
+[character]
+success_symbol = '[\$](bold white)'
+error_symbol = '[\$](bold white)'
+
+[directory]
+format = '[\[$path\]](cyan)'
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+format = '[\[$branch\]](green)'
+
+[git_status]
+format = '[$modified$staged](red)'
+ignore_submodules = true
+
+[package]
+disabled = true
