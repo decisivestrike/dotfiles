@@ -19,5 +19,6 @@ fi
 
 # Path
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.lmstudio/bin:$PATH"
 export PATH="$HOME/.chameleon/bin:$PATH"
