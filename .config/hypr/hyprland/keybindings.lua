@@ -4,14 +4,18 @@ local focus = hl.dsp.focus
 local dispatch = hl.dispatch
 local send_shortcut = hl.dsp.send_shortcut
 
-local shared = require("hyprland.shared")
-local terminal = shared.terminal
-local file_manager = shared.file_manager
-local color_picker = shared.color_picker
+local apps = require("hyprland.apps")
+local terminal = apps.terminal
+local file_manager = apps.file_manager
+local color_picker = apps.color_picker
 
 local main_mod = "SUPER"
 
-bind(main_mod .. " + Q", window.close())
+bind(main_mod .. " + Q", window.close(), {
+	transparent = true,
+	submap_universal = true,
+	description = "Close window",
+})
 
 bind(main_mod .. " + F", function()
 	local win = hl.get_active_window()
@@ -42,7 +46,9 @@ end, { description = "Toggle floating" })
 
 -- Layout
 bind(main_mod .. " + P", window.pseudo())
-bind(main_mod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
+bind(main_mod .. " + J", hl.dsp.layout("togglesplit"), {
+	description = "Toggle split",
+}) -- dwindle only
 
 -- Utils
 bind(main_mod .. "+ SHIFT + P", hl.dsp.exec_cmd(color_picker))

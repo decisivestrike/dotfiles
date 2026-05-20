@@ -27,9 +27,6 @@ if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
   source /usr/share/fzf/completion.zsh
 fi
 
-# Fnm completion
-eval "$(fnm env --use-on-cd --shell zsh)"
-
 source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/bindings.zsh"
 source "$ZDOTDIR/fzf.zsh"
