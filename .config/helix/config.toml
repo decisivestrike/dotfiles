@@ -18,9 +18,14 @@ character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 hidden = false
 
 [editor.statusline]
-left = ["mode", "diagnostics", "spinner"]
+left = ["mode", "diagnostics", "version-control", "spinner"]
 center = []
-right = ["file-encoding", "file-line-ending", "file-type"]
+right = [
+    "position-percentage",
+    "file-encoding",
+    "file-line-ending",
+    "file-type",
+]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"

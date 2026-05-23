@@ -1,4 +1,6 @@
-enabled = true
-placeholder = "Search..."
+searchbar_placeholder = "Search..."
+providers = ["applications"]
+
+[applications]
 terminal_cmd = "kitty"
 detach = true

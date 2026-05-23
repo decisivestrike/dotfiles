@@ -4,6 +4,8 @@ alias gst='git status'
 alias gc='git commit --verbose'
 alias gp='git push'
 
+alias gloga='git log --oneline --decorate --graph --all'
+
 # Better ls
 alias ls='eza --icons'
 alias ll='eza -lh --icons --git'
