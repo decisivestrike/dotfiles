@@ -1,9 +1,13 @@
 theme = "simple-kanagawa"
 
 [editor]
-line-number = "relative"
+scrolloff = 3
 mouse = false
+true-color = true
+undercurl = true
+line-number = "relative"
 bufferline = "multiple"
+clipboard-provider = "wayland"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -16,6 +20,9 @@ character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 
 [editor.file-picker]
 hidden = false
+
+[editor.auto-save]
+focus-lost = true
 
 [editor.statusline]
 left = ["mode", "diagnostics", "version-control", "spinner"]

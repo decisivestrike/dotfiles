@@ -13,3 +13,11 @@ auto-format = true
 name = "rust"
 language-servers = ["rust-analyzer"]
 auto-format = true
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'

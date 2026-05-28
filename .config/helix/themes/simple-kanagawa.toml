@@ -1,2 +1,2 @@
 inherits = "kanagawa"
-keyword = { modifiers = [] }
+keyword = { fg = "oniViolet" }
