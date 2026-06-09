@@ -163,10 +163,10 @@ gridview :selected #wallpaper-name {
 
 /* ------------------- Панель (Panel) ------------------- */
 #panel {
-    font-size: 16px;
+    font-size: 15px;
     background-color: alpha(var(--surface-dim), 0.75);
     border-radius: 0px;
-    border-bottom: 1px solid alpha(var(--primary), 0.2);
+    border-bottom: 1px solid alpha(var(--primary), 0.1);
 }
 
 separator.vertical {
