@@ -166,7 +166,7 @@
   "extensions.autoCheckUpdates": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.css": "tailwindcss",
+    // "*.css": "tailwindcss",
     "config": "shellscript"
   },
   "files.autoSave": "onFocusChange",
@@ -253,5 +253,6 @@
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
   "keyboard.dispatch": "keyCode",
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
 }

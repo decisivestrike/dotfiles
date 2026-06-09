@@ -1,6 +1,17 @@
 searchbar_placeholder = "Search..."
-providers = ["applications"]
+providers = ["applications", "wallpapers"]
 
 [applications]
 terminal_cmd = "kitty"
 detach = true
+
+[wallpapers]
+path = "/home/inqlog/Pictures/wallpapers/unsorted"
+change_command = """
+awww img --transition-fps 120 \
+  --transition-type center \
+  --transition-duration 0.8 \
+  --transition-step 40 \
+  --transition-bezier 0.42,0.0,1.0,1.0 \
+  {{image}}
+"""

@@ -1,0 +1,167 @@
+:root {
+    /* ===== Оригинальная палитра Kanagawa ===== */
+    --kanagawa-sumiInk0: #1F1F28;
+    /* основной фон */
+    --kanagawa-sumiInk1: #2A2A37;
+    /* чуть светлее (панели, статус‑бар) */
+    --kanagawa-sumiInk2: #363646;
+    /* выделение, текущая строка */
+    --kanagawa-sumiInk3: #54546D;
+    /* границы, неактивный текст */
+    --kanagawa-sumiInk4: #6C6C82;
+    /* ещё светлее (редко) */
+    --kanagawa-fujiGray: #727169;
+    /* номера строк, комментарии */
+    --kanagawa-waveBlue1: #7E9CD8;
+    /* функции, ссылки, акцент */
+    --kanagawa-waveBlue2: #6A8EC1;
+    /* тусклый синий */
+    --kanagawa-winterGreen: #98BB6C;
+    /* строки */
+    --kanagawa-springGreen: #7FB4CA;
+    /* типы, информационные элементы */
+    --kanagawa-boatYellow1: #C0A36E;
+    /* числа */
+    --kanagawa-boatYellow2: #938056;
+    /* тёмно‑жёлтый */
+    --kanagawa-carpYellow: #E6C384;
+    /* константы, булевы значения */
+    --kanagawa-crystalBlue: #2D4F67;
+    /* глубокий синий (визуальное выделение) */
+    --kanagawa-oniViolet: #957FB8;
+    /* ключевые слова, препроцессор */
+    --kanagawa-roninYellow: #FF9E3B;
+    /* предупреждения, теги */
+    --kanagawa-springViolet1: #9CABCA;
+    /* переменные (светлый фиолетовый) */
+    --kanagawa-springViolet2: #A3B4D5;
+    /* альтернативный светлый фиолет */
+    --kanagawa-sakuraPink: #D27E99;
+    /* спецсимволы, пунктуация */
+    --kanagawa-autumnGreen: #76946A;
+    /* добавленные строки (diff) */
+    --kanagawa-autumnRed: #C34043;
+    /* удалённые строки (diff) */
+    --kanagawa-autumnYellow: #DCA561;
+    /* изменённые строки (diff) */
+    --kanagawa-surimiOrange: #FFA066;
+    /* оранжевый (макросы) */
+    --kanagawa-peachRed: #FF5D62;
+    /* ошибки */
+    --kanagawa-fujiWhite: #DCD7BA;
+    /* основной цвет текста */
+    --kanagawa-oldWhite: #C8C093;
+    /* приглушённый текст (неактивный) */
+}
+
+* {
+    all: unset;
+}
+
+/* Launcher */
+#launcher-window {
+    /* MUST BE TRANSPARENT */
+    background-color: transparent;
+
+    /* This padding fixes ghosting */
+    padding: 2px;
+
+    font-family: "Iosevka Nerd Font Mono";
+}
+
+#launcher {
+    font-size: 18px;
+    padding: 8px;
+
+    background-color: var(--kanagawa-sumiInk1);
+    border-radius: 0px;
+    border: 3px solid var(--kanagawa-springViolet1);
+    box-shadow: 0px 1px 2px 0.5px rgba(0, 0, 0, 0.6);
+}
+
+stackswitcher {
+    padding: 0px 2px;
+    background-color: var(--kanagawa-sumiInk3);
+    font-size: 13px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+stackswitcher button {
+    color: var(--kanagawa-fujiWhite);
+    background-color: var(--kanagawa-sumiInk4);
+    font-weight: 700;
+    margin: 2px 2px;
+    padding: 2px 0px;
+    border-radius: 4px;
+}
+
+listview :selected,
+gridview :selected {
+    background-color: var(--kanagawa-sumiInk2);
+    border-radius: 4px;
+}
+
+entry {
+    border: none;
+    border-radius: 6px;
+    color: var(--kanagawa-fujiWhite);
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}
+
+entry placeholder {
+    color: var(--kanagawa-sumiInk4);
+}
+
+listview {
+
+    padding: 2px;
+    border-radius: 0px;
+}
+
+scrolledwindow scrollbar {
+
+    background-color: transparent;
+}
+
+scrolledwindow scrollbar slider {
+
+    background-color: transparent;
+}
+
+separator.horizontal {
+    margin: 4px 0px;
+    background-color: var(--kanagawa-sakuraPink);
+    border: 1px;
+    min-height: 1px;
+}
+
+/* -- Applications -- */
+.app {
+    color: var(--kanagawa-fujiWhite);
+    padding: 8px;
+}
+
+.comment {
+    font-size: 14px;
+    color: var(--kanagawa-oldWhite);
+}
+
+
+/* -- Wallpapers -- */
+#wallpaper {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 8px;
+}
+
+#wallpaper-picture {
+    border-radius: 4px;
+}
+
+#wallpaper-name {
+    color: var(--kanagawa-fujiWhite);
+    margin-top: 5px;
+    font-size: 14px;
+}

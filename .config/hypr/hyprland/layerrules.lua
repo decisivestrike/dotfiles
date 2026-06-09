@@ -25,8 +25,8 @@ hl.layer_rule({
 })
 
 hl.layer_rule({
-	name = "chameleon-notications",
-	match = { namespace = "chameleon-notications" },
+	name = "chameleon-notifications",
+	match = { namespace = "chameleon-notifications" },
 
 	blur = true,
 	blur_popups = true,

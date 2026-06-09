@@ -3,9 +3,17 @@ spacing = 10
 position = "top"
 
 [modules]
-left = ["workspaces", "separator"]
-center = []
-right = ["keyboard_layout", "separator", "pulseaudio", "separator", "clock"]
+left = ["workspaces"]
+center = ["mpris"]
+right = [
+    "tray",
+    "separator",
+    "keyboard_layout",
+    "separator",
+    "pulseaudio",
+    "separator",
+    "clock",
+]
 
 [battery]
 icons = ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]

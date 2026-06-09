@@ -1,0 +1,5 @@
+:root {
+    <* for name, value in colors *>
+    --{{ name | kebab_case }}: {{ value.default.hex }};
+    <* endfor *>
+}
