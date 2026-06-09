@@ -22,7 +22,6 @@
     border: 1px solid alpha(var(--outline-variant), 0.3);
 }
 
-/* Launcher */
 #launcher-window {
     background-color: transparent;
 
@@ -30,11 +29,43 @@
     padding: 1px;
 }
 
+scrolledwindow scrollbar {
+    background-color: transparent;
+}
+
+scrolledwindow scrollbar slider {
+    background-color: var(--outline-variant);
+    border-radius: 10px;
+    min-width: 6px;
+}
+
+/* Entry */
+entry {
+    font-size: 15.5px;
+    background-color: alpha(var(--surface-container-highest), 0.5);
+    border-radius: 12px;
+    color: var(--on-surface);
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+/* entry:focus {
+    background-color: alpha(var(--surface-container-highest), 0.8);
+    box-shadow: 0 0 0 2px alpha(var(--primary), 0.5);
+} */
+
+entry placeholder {
+    color: var(--outline);
+}
+
 /* Switcher */
 stackswitcher {
     font-size: 13px;
     border: 1px solid var(--outline-variant);
     border-radius: 16px;
+    margin-bottom: 6px;
+    margin-top: 0px;
 }
 
 stackswitcher button {
@@ -42,6 +73,7 @@ stackswitcher button {
     border-right: 1px solid var(--outline-variant);
     padding: 4px 12px;
     border-radius: 0px;
+    transition: padding 0.3s cubic-bezier(0.7, -0.50, 0.265, 3);
 }
 
 stackswitcher button:first-child {
@@ -53,39 +85,10 @@ stackswitcher button:last-child {
     border: none;
 }
 
-
 stackswitcher button:checked {
+    padding: 4px 16px;
     color: var(--on-secondary-fixed);
     background-color: var(--secondary-fixed);
-}
-
-scrolledwindow scrollbar {
-    background-color: transparent;
-}
-
-listview row:selected {
-    all: unset;
-    background-color: alpha(var(--primary), 0.8);
-    border-radius: 8px;
-}
-
-entry {
-    font-size: 15px;
-    background-color: alpha(var(--surface-container-highest), 0.5);
-    border-radius: 12px;
-    color: var(--on-surface);
-    padding: 8px 12px;
-    margin-bottom: 12px;
-    transition: all 0.2s ease;
-}
-
-entry:focus {
-    background-color: alpha(var(--surface-container-highest), 0.8);
-    box-shadow: 0 0 0 2px alpha(var(--primary), 0.5);
-}
-
-entry placeholder {
-    color: var(--outline);
 }
 
 listview {
@@ -94,6 +97,21 @@ listview {
     background-color: alpha(var(--surface-container), 0.4);
 }
 
+listview :selected .app {
+    background-color: alpha(var(--primary-container), 0.7);
+}
+
+
+
+/* listview row:selected .app-name {
+    color: var(--on-primary-container);
+}
+
+listview row:selected .app-comment {
+    color: var(--on-primary-container);
+} */
+
+/* Applications */
 .app {
     padding: 8px 12px;
     border-radius: 12px;
@@ -105,11 +123,18 @@ listview {
     background-color: alpha(var(--primary-container), 0.3);
 }
 
-.comment {
-    font-size: 14px;
+.app-name {
+    font-weight: 600;
+    font-size: 16.5px;
+    color: var(--on-surface);
+}
+
+.app-comment {
+    font-size: 13px;
     color: var(--on-surface-variant);
 }
 
+/* Wallpaper */
 #wallpaper {
     margin: 4px;
     background-color: var(--surface-container);
@@ -124,16 +149,16 @@ listview {
 #wallpaper-picture {
     margin-bottom: 6px;
     border-radius: 8px;
+    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
 }
 
+gridview :selected #wallpaper {
+    background-color: alpha(var(--primary-container), 0.7);
+    border-radius: 8px;
+}
 
-
-
-
-scrolledwindow scrollbar slider {
-    background-color: var(--outline-variant);
-    border-radius: 10px;
-    min-width: 6px;
+gridview :selected #wallpaper-name {
+    color: var(--on-primary-container);
 }
 
 /* ------------------- Панель (Panel) ------------------- */
