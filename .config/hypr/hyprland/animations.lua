@@ -10,6 +10,7 @@ curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
 -- Default springs
 curve("easy", { type = "spring", mass = 1.2, stiffness = 112, dampening = 16 })
+curve("smooth", { type = "spring", mass = 1.2, stiffness = 124, dampening = 20 })
 
 animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
 animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "easeOutQuint" })
@@ -29,6 +30,12 @@ animation({
 	bezier = "linear",
 	style = "popin 87%",
 })
+animation({
+	leaf = "windowsMove",
+	enabled = true,
+	speed = 2.5,
+	spring = "easy",
+})
 
 animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })
 animation({ leaf = "fadeOut", enabled = true, speed = 1.46, bezier = "almostLinear" })
@@ -38,9 +45,8 @@ animation({ leaf = "layers", enabled = true, speed = 3.81, bezier = "easeOutQuin
 animation({
 	leaf = "layersIn",
 	enabled = true,
-	speed = 4,
+	speed = 1.2,
 	bezier = "easeOutQuint",
-	style = "fade",
 })
 animation({
 	leaf = "layersOut",

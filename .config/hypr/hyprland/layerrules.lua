@@ -21,7 +21,8 @@ hl.layer_rule({
 	blur = true,
 	blur_popups = true,
 	ignore_alpha = 0.2,
-	animation = "popin",
+	dim_around = true,
+	animation = "popin 70%",
 })
 
 hl.layer_rule({
