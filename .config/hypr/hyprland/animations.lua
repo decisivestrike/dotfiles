@@ -20,7 +20,7 @@ animation({
 	leaf = "windowsIn",
 	enabled = true,
 	speed = 4.1,
-	spring = "easy",
+	spring = "smooth",
 	style = "popin 87%",
 })
 animation({
@@ -34,7 +34,7 @@ animation({
 	leaf = "windowsMove",
 	enabled = true,
 	speed = 2.5,
-	spring = "easy",
+	spring = "smooth",
 })
 
 animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })

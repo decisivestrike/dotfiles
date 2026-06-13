@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers/unsorted"
 CURRENT_WALL=$(awww query | awk '{print $8}')
