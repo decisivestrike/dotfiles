@@ -154,7 +154,6 @@ listview row:selected .app-comment {
 
 gridview :selected #wallpaper {
     background-color: alpha(var(--primary-container), 0.7);
-    border-radius: 8px;
 }
 
 gridview :selected #wallpaper-name {
@@ -163,7 +162,8 @@ gridview :selected #wallpaper-name {
 
 /* ------------------- Панель (Panel) ------------------- */
 #panel {
-    font-size: 15px;
+    font-size: 14.5px;
+    color: var(--on-surface);
     background-color: alpha(var(--surface-dim), 0.75);
     border-radius: 0px;
     border-bottom: 1px solid alpha(var(--primary), 0.1);
@@ -186,12 +186,12 @@ separator.vertical {
 #workspaces {
     margin: 4px 0 4px 12px;
     border-radius: 40px;
-    padding: 2px 6px;
+    padding: 2px 4px;
     background-color: var(--surface-container-low);
 }
 
 #workspaces label {
-    padding: 4px 10px;
+    padding: 2px 8px;
     font-weight: 500;
     color: var(--on-surface-variant);
     border-radius: 32px;
@@ -222,21 +222,13 @@ separator.vertical {
     color: var(--on-secondary-container);
 }
 
-/* Индикаторы */
-#keyboard-layout,
-#battery,
-#pulseaudio,
-#clock {
-    color: var(--on-surface);
-    background-color: alpha(var(--secondary-container), 0.3);
-    padding: 4px 10px;
-    border-radius: 24px;
-    margin: 4px 0px;
-}
-
 #clock {
     margin-right: 12px;
     background-color: alpha(var(--primary-container), 0.3);
+    padding: 0px 12px;
+    border-radius: 12px;
+    margin: 4px 0px;
+    margin-right: 10px;
     font-weight: 600;
 }
 
