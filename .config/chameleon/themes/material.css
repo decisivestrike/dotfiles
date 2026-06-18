@@ -14,7 +14,7 @@
     font-variant-ligatures: none;
 }
 
-/* ------------------- Launcher (Окно запуска) ------------------- */
+/* ------------------- Launcher ------------------- */
 #launcher {
     padding: 12px;
     background-color: var(--surface-container-lowest);
@@ -40,7 +40,7 @@ scrolledwindow scrollbar slider {
 }
 
 /* Entry */
-entry {
+#searchbar {
     font-size: 15.5px;
     background-color: alpha(var(--surface-container-highest), 0.5);
     border-radius: 12px;
@@ -50,17 +50,13 @@ entry {
     transition: all 0.2s ease;
 }
 
-/* entry:focus {
-    background-color: alpha(var(--surface-container-highest), 0.8);
-    box-shadow: 0 0 0 2px alpha(var(--primary), 0.5);
-} */
-
-entry placeholder {
+entry placeholder,
+#searchbar #counter {
     color: var(--outline);
 }
 
 /* Switcher */
-stackswitcher {
+#switcher {
     font-size: 13px;
     border: 1px solid var(--outline-variant);
     border-radius: 16px;
@@ -68,7 +64,7 @@ stackswitcher {
     margin-top: 0px;
 }
 
-stackswitcher button {
+#switcher button {
     margin: 0px;
     border-right: 1px solid var(--outline-variant);
     padding: 4px 12px;
@@ -76,16 +72,16 @@ stackswitcher button {
     transition: padding 0.3s cubic-bezier(0.7, -0.50, 0.265, 3);
 }
 
-stackswitcher button:first-child {
+#switcher button:first-child {
     border-radius: 16px 0px 0px 16px;
 }
 
-stackswitcher button:last-child {
+#switcher button:last-child {
     border-radius: 0px 16px 16px 0px;
     border: none;
 }
 
-stackswitcher button:checked {
+#switcher button:checked {
     padding: 4px 16px;
     color: var(--on-secondary-fixed);
     background-color: var(--secondary-fixed);
@@ -100,8 +96,6 @@ listview {
 listview :selected .app {
     background-color: alpha(var(--primary-container), 0.7);
 }
-
-
 
 /* listview row:selected .app-name {
     color: var(--on-primary-container);
@@ -160,7 +154,7 @@ gridview :selected #wallpaper-name {
     color: var(--on-primary-container);
 }
 
-/* ------------------- Панель (Panel) ------------------- */
+/* ------------------- Панель ------------------- */
 #panel {
     font-size: 14.5px;
     color: var(--on-surface);
