@@ -105,12 +105,30 @@ listview row:selected .app-comment {
     color: var(--on-primary-container);
 } */
 
+/* Not Found Page */
+#notfound {
+    padding: 48px 32px;
+    border-radius: 12px;
+    background-color: alpha(var(--surface-container), 0.4);
+}
+
+#notfound-header {
+    font-size: 16.5px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--on-surface);
+}
+
+#notfound-comment {
+    font-size: 13px;
+    color: var(--on-surface-variant);
+}
+
 /* Applications */
 .app {
     padding: 8px 12px;
     border-radius: 12px;
     margin: 2px 0px;
-    transition: background 0.15s;
 }
 
 .app:hover {
