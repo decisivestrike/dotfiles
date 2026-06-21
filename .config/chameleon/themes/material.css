@@ -244,6 +244,66 @@ separator.vertical {
     font-weight: 600;
 }
 
+/* Player */
+#player-window {
+    background-color: transparent;
+
+    /* This padding fixes ghosting */
+    padding: 1px;
+}
+
+#player-window>box {
+    padding: 8px;
+    background-color: alpha(var(--surface-container-low), 0.9);
+    border-radius: 12px;
+    border: 1px solid alpha(var(--outline), 0.3);
+}
+
+#player-cover {
+    border-radius: 6px;
+    margin-right: 6px;
+    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
+}
+
+#player-content {
+    background-color: var(--surface-container);
+    border-radius: 6px;
+    padding: 4px 8px;
+    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
+}
+
+#player-album {
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary-fixed-dim);
+}
+
+#player-title {
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--on-surface-container);
+}
+
+#player-artist {
+    box-shadow: none;
+    font-size: 13px;
+    color: var(--on-surface-container);
+}
+
+#player-buttons {
+    margin: 0px 28px 2px 28px;
+}
+
+#player-buttons button {
+    color: var(--on-secondary-container);
+    background-color: var(--secondary-container);
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
 /* ------------------- Уведомления ------------------- */
 #notification {
     padding: 8px 12px;
