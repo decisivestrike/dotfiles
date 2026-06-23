@@ -305,19 +305,40 @@ separator.vertical {
 }
 
 /* ------------------- Уведомления ------------------- */
+#notification-window {
+    background-color: transparent;
+
+    /* This padding fixes ghosting */
+    padding: 1px;
+}
+
 #notification {
     padding: 8px 12px;
     color: var(--on-surface);
     font-size: 14px;
-    border-left: 6px solid transparent;
     border-radius: 12px;
-    background-color: alpha(var(--surface-container-high), 0.95);
+    border: 2px solid transparent;
+    background-color: alpha(var(--surface-container-lowest), 0.8);
+    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
+}
+
+#icon {
+    margin-right: 4px;
+}
+
+#text-container {
+    margin: 0px 8px 0px 8px;
+    border-radius: 16px 12px;
+    padding: 8px;
+    background-color: alpha(var(--surface-container), 0.8);
+    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
 }
 
 #summary {
     font-size: 16.5px;
     font-weight: 700;
     margin-bottom: 4px;
+    color: var(--on-surface);
 }
 
 #body {
@@ -326,68 +347,47 @@ separator.vertical {
 }
 
 #notification.low {
-    border-left-color: var(--outline);
+    border-color: alpha(var(--secondary-container), 0.5);
 }
 
 #notification.normal {
-    border-left-color: var(--secondary);
+    border-color: alpha(var(--primary-container), 0.5);
 }
 
 #notification.critical {
-    border-left-color: var(--error);
-    background-color: alpha(var(--error-container), 0.9);
-    color: var(--on-error-container);
+    border-color: alpha(var(--error-container), 0.5);
 }
 
-/* ------------------- Анимации ------------------- */
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
+#notification-close-button {
+    transform: translateY(-4px);
+    color: var(--on-surface);
+    font-weight: 700;
 }
 
-/* Дополнительные улучшения для скроллов */
-scrollbar {
-    background-color: transparent;
-}
-
-/* dock */
+/* Dock */
 #dock {
-    background-color: alpha(var(--surface-container-highest), 0.5);
-    /* Полупрозрачный фон */
-    border-radius: 24px;
-    /* Скругленные края, как у Dock */
-    padding: 8px 16px;
-    margin: 12px;
-    border: 1px solid var(--outline);
-
-    /* Плавное появление при изменении размеров (опционально) */
+    background-color: alpha(var(--surface-container-low), 0.8);
+    border-radius: 18px;
+    padding: 6px 12px;
+    border: 1px solid alpha(var(--outline-variant), 0.8);
     transition: all 0.2s ease;
 }
 
-/* Стиль каждой иконки внутри дока (используем класс .dock-icon) */
 .dock-icon {
-    /* Отступы между иконками */
-    margin: 0 6px;
-
-    /* Прозрачный фон и скругление для эффекта "подсветки" */
-    background-color: alpha(var(--surface-container-high), 0.8);
-    border-radius: 16px;
-
-    /* Анимация трансформации (увеличение) */
+    margin-right: 8px;
     transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.5);
 }
 
-/* При наведении на иконку — увеличиваем и добавляем эффект парения */
+#dock image:last-child {
+    margin: 0px;
+}
+
 .dock-icon:hover {
     transform: scale(1.25) translateY(-10px);
+}
+
+#dock-window {
+    all: unset;
+    background-color: transparent;
+    padding-top: 20px;
 }

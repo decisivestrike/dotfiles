@@ -22,7 +22,3 @@ name = "BAT1"
 [clock]
 format = "%a, %b %e %H:%M"
 # format = "%H:%M"
-
-[workspaces]
-# numeral_system = "japanese"
-# numeral_variant = "financial"
