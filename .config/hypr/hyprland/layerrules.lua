@@ -34,3 +34,13 @@ hl.layer_rule({
 	ignore_alpha = 0.2,
 	animation = "slide right",
 })
+
+hl.layer_rule({
+	name = "chameleon-player",
+	match = { namespace = "chameleon-player" },
+
+	blur = true,
+	blur_popups = true,
+	ignore_alpha = 0.2,
+	animation = "slidefade top",
+})
