@@ -1,2 +1,2 @@
-modules = ["panel", "launcher", "notifications"]
+modules = ["panel", "launcher", "notifications", "dock"]
 theme = "material"

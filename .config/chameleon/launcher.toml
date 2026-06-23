@@ -15,3 +15,13 @@ awww img --transition-fps 120 \
   --transition-bezier 0.42,0.0,1.0,1.0 \
   {{image}}
 """
+
+matugen = true
+matugen_flags = [
+  "--source-color-index",
+  "0",
+  "--type",
+  "scheme-fidelity",
+  "--fallback-color",
+  "#808080",
+]

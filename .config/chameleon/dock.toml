@@ -1,0 +1,12 @@
+apps = [
+    "Obsidian",
+    "Ghostty",
+    "Visual Studio Code",
+    "Google Chrome",
+    "Yazi File Manager",
+    "drawio",
+    "OBS Studio",
+    "Громкость",
+]
+terminal_cmd = "kitty"
+detach = false
