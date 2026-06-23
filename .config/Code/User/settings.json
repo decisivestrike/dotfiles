@@ -254,5 +254,6 @@
   "workbench.tree.indent": 20,
   "keyboard.dispatch": "keyCode",
   "workbench.activityBar.location": "hidden",
-  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+  "update.showReleaseNotes": false
 }
