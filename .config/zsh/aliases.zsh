@@ -7,11 +7,11 @@ alias gp='git push'
 alias gloga='git log --oneline --decorate --graph --all'
 
 # Better ls
-alias ls='eza --icons'
-alias ll='eza -lh --icons --git'
-alias la='eza -ah --icons --git'
-alias lla='eza -lah --icons --git'
-alias tree='eza --tree --icons'
+alias ls='eza --icons=always'
+alias l='eza -lh --icons=always --git'
+alias la='eza -ah --icons=always --git'
+alias lla='eza -lah --icons=always --git'
+alias lt='eza --icons=always --tree'
 
 compdef eza=ls
 
