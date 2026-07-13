@@ -71,26 +71,25 @@
 
 #launcher {
     font-size: 18px;
-    padding: 8px;
-
     background-color: var(--kanagawa-sumiInk1);
     border-radius: 0px;
     border: 3px solid var(--kanagawa-springViolet1);
+    padding: 8px;
     box-shadow: 0px 1px 2px 0.5px rgba(0, 0, 0, 0.6);
 }
 
-stackswitcher {
+#switcher {
+    font-size: 13px;
     padding: 0px 2px;
     background-color: var(--kanagawa-sumiInk3);
-    font-size: 13px;
     margin-bottom: 4px;
     border-radius: 4px;
 }
 
-stackswitcher button {
+#switcher button {
+    font-weight: 700;
     color: var(--kanagawa-fujiWhite);
     background-color: var(--kanagawa-sumiInk4);
-    font-weight: 700;
     margin: 2px 2px;
     padding: 2px 0px;
     border-radius: 4px;

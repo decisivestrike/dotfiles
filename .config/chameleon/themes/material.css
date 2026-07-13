@@ -366,11 +366,12 @@ separator.vertical {
 
 /* Dock */
 #dock {
-    background-color: alpha(var(--surface-container-low), 0.8);
+    background-color: alpha(var(--surface-container-lowest), 0.4);
     border-radius: 18px;
     padding: 6px 12px;
-    border: 1px solid alpha(var(--outline-variant), 0.8);
+    border: 1px solid alpha(var(--outline), 0.6);
     transition: all 0.2s ease;
+    box-shadow: 0px 0px 1px 1px alpha(var(--shadow), 0.2);
 }
 
 .dock-icon {
@@ -389,5 +390,5 @@ separator.vertical {
 #dock-window {
     all: unset;
     background-color: transparent;
-    padding-top: 20px;
+    padding: 20px 2px 2px 2px;
 }

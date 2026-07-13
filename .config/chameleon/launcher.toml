@@ -3,7 +3,7 @@ providers = ["applications", "wallpapers"]
 
 [applications]
 terminal_cmd = "kitty"
-detach = true
+detach = false
 
 [wallpapers]
 path = "/home/inqlog/Pictures/wallpapers/unsorted"
