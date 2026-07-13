@@ -44,3 +44,13 @@ hl.layer_rule({
 	ignore_alpha = 0.2,
 	animation = "slidefade top",
 })
+
+hl.layer_rule({
+	name = "chameleon-dock",
+	match = { namespace = "chameleon-dock" },
+
+	blur = true,
+	blur_popups = true,
+	ignore_alpha = 0.2,
+	animation = "slidefade bottom",
+})
