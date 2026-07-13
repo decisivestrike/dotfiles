@@ -9,8 +9,8 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 
 # Editor
-export EDITOR="code"
-export VISUAL="code"
+export EDITOR="helix"
+export VISUAL="helix"
 
 # Pager
 if command -v bat >/dev/null 2>&1; then

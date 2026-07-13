@@ -29,5 +29,6 @@ alias bonsai="cbonsai"
 
 # Commands
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias large-dirs="du -h / --max-depth=1 2>/dev/null | sort -rh | head -10"
+alias large-dirs="du -h . --max-depth=1 2>/dev/null | sort -rh | head -10"
 alias gpu-temp="nvidia-smi --query-gpu=temperature.gpu --format=noheader"
+alias regenerate-booster-images="sudo bash /usr/lib/booster/regenerate_images"
