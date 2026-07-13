@@ -1,6 +1,6 @@
 [config]
 
 [templates.chameleon]
-input_path = '~/.config/matugen/colors.css'
+input_path = '~/.config/matugen/colors.css.template'
 output_path = '~/.config/chameleon/colors.css'
 post_hook = 'touch ~/.config/chameleon/themes/material.css'
