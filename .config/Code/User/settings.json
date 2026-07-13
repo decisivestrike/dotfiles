@@ -38,15 +38,6 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "[lua]": {
-    "editor.quickSuggestions": {
-      "comments": "inline",
-      "other": "on",
-      "strings": "on"
-    },
-    "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "JohnnyMorganz.stylua"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
@@ -59,6 +50,15 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.trailingComma": "none"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "editor.quickSuggestions": {
+      "comments": "inline",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.semanticHighlighting.enabled": true
   },
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false,
@@ -166,7 +166,7 @@
   "extensions.autoCheckUpdates": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    // "*.css": "tailwindcss",
+    "*.lock": "json",
     "config": "shellscript"
   },
   "files.autoSave": "onFocusChange",
@@ -189,6 +189,7 @@
     "https://ui.shadcn.com": true,
     "https://www.schemastore.org/": true
   },
+  "keyboard.dispatch": "keyCode",
   "Lua.diagnostics.globals": ["vim", "hl"],
   "Lua.workspace.library": [
     "/usr/share/nvim/runtime/lua",
@@ -227,7 +228,10 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.smoothScrolling": true,
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+  "update.showReleaseNotes": false,
   "vue.editor.templateInterpolationDecorators": false,
   "vue.format.script.initialIndent": true,
   "vue.format.style.initialIndent": true,
@@ -237,6 +241,7 @@
   "window.menuStyle": "custom",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
   "workbench.browser.showInTitleBar": false,
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#00ff00"
@@ -251,9 +256,5 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 20,
-  "keyboard.dispatch": "keyCode",
-  "workbench.activityBar.location": "hidden",
-  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
-  "update.showReleaseNotes": false
+  "workbench.tree.indent": 20
 }
