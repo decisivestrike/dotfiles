@@ -4,6 +4,7 @@ command = "rust-analyzer"
 [[language]]
 name = "go"
 auto-format = true
+formatter = { command = "goimports" }
 
 [[language]]
 name = "lua"
@@ -21,3 +22,13 @@ auto-format = true
 '"' = '"'
 '`' = '`'
 '<' = '>'
+
+[[language]]
+name = "vue"
+auto-format = false
+language-servers = ["typescript-language-server"]
+
+[[language-server.typescript-language-server.config.plugins]]
+location = "/usr/lib/node_modules/@vue/language-server"
+name = "@vue/typescript-plugin"
+languages = ["vue"]
