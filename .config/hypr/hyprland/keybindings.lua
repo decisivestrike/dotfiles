@@ -57,7 +57,14 @@ bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
 bind(main_mod .. " + T", hl.dsp.exec_cmd(terminal))
 
 -- Pass
--- hl.bind(mainMod .. " + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$" }))
+bind(
+	main_mod .. " + F10",
+	hl.dsp.pass({
+		window = "class:^(com\\.obsproject\\.Studio)$",
+	}, {
+		description = "Start/Stop Recording",
+	})
+)
 bind(
 	main_mod .. " + M",
 	send_shortcut({
