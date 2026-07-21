@@ -78,10 +78,6 @@ bind(
 	})
 )
 
-bind(
-	main_mod .. "+ SHIFT + W",
-	hl.dsp.exec_raw("bash -c ~/.config/hypr/scripts/change_wallpaper.sh")
-)
 bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))
 
 -- Screenshot
@@ -103,8 +99,7 @@ bind(main_mod .. "+ SHIFT + right", window.swap({ direction = "right" }))
 bind(main_mod .. "+ SHIFT + up", window.swap({ direction = "up" }))
 bind(main_mod .. "+ SHIFT + down", window.swap({ direction = "down" }))
 
--- Resize window
-
+--- Resizes window
 ---@param x number
 ---@param y number
 ---@return HL.Dispatcher
@@ -130,47 +125,16 @@ bind(main_mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 bind(main_mod .. " + SHIFT + S", window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
-bind(main_mod .. " + mouse_down", focus({ workspace = "r+1" }))
-bind(main_mod .. " + mouse_up", focus({ workspace = "r-1" }))
+bind(main_mod .. " + mouse_down", focus({ workspace = "r-1" }))
+bind(main_mod .. " + mouse_up", focus({ workspace = "r+1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 bind(main_mod .. " + mouse:272", window.drag(), { mouse = true })
 bind(main_mod .. " + mouse:273", window.resize(), { mouse = true })
 
--- Laptop multimedia keys for volume and LCD brightness
-hl.bind(
-	"XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86AudioLowerVolume",
-	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86AudioMute",
-	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86AudioMicMute",
-	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86MonBrightnessUp",
-	hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"XF86MonBrightnessDown",
-	hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),
-	{ locked = true, repeating = true }
-)
-
--- Requires playerctl
-hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+hl.bind("SUPER + Tab", function()
+	hl.dispatch(hl.dsp.window.cycle_next())
+	hl.dispatch(hl.dsp.window.bring_to_top())
+end, {
+	description = "To switch between windows in a floating workspace",
+})
