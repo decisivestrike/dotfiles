@@ -138,3 +138,16 @@ hl.bind("SUPER + Tab", function()
 end, {
 	description = "To switch between windows in a floating workspace",
 })
+
+-- Laptop multimedia keys for volume
+bind(
+	"XF86AudioRaiseVolume",
+	hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
+	{ locked = true, repeating = true }
+)
+
+bind(
+	"XF86AudioLowerVolume",
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
+	{ locked = true, repeating = true }
+)
