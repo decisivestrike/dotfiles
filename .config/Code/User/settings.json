@@ -91,7 +91,7 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[tailwindcss]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
@@ -123,7 +123,6 @@
     },
     "editor.tabSize": 2
   },
-  "biome.suggestInstallingGlobally": false,
   "breadcrumbs.enabled": false,
   "chat.disableAIFeatures": true,
   "clangd.arguments": [
@@ -201,6 +200,8 @@
   "notebook.output.fontFamily": "12",
   "notebook.output.fontSize": 12,
   "oxc.requireConfig": true,
+  "prettify-ts.maxCharacters": 200,
+  "prettify-ts.maxProperties": 100,
   "python.analysis.typeCheckingMode": "standard",
   "python.createEnvironment.trigger": "off",
   "python.defaultInterpreterPath": "/sbin/python3.14",
