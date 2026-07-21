@@ -1,5 +1,10 @@
-[language-server.rust-analyzer]
-command = "rust-analyzer"
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
 
 [[language]]
 name = "go"
@@ -29,6 +34,6 @@ auto-format = false
 language-servers = ["typescript-language-server"]
 
 [[language-server.typescript-language-server.config.plugins]]
-location = "/usr/lib/node_modules/@vue/language-server"
 name = "@vue/typescript-plugin"
+location = "/usr/lib/node_modules/@vue/typescript-plugin"
 languages = ["vue"]

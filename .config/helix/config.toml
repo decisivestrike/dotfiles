@@ -1,4 +1,4 @@
-theme = "simple-kanagawa"
+theme = "adwaita-light"
 
 [editor]
 scrolloff = 3
@@ -27,12 +27,7 @@ focus-lost = true
 [editor.statusline]
 left = ["mode", "diagnostics", "version-control", "spinner"]
 center = []
-right = [
-    "position-percentage",
-    "file-encoding",
-    "file-line-ending",
-    "file-type",
-]
+right = ["position", "total-line-numbers", "file-encoding", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
