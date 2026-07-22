@@ -1,7 +1,0 @@
-"ui.background" = "white"
-"ui.text" = "black"
-"ui.selection" = "yellow"
-
-[palette]
-white = "#ffffff"
-black = "#595959"

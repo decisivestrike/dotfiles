@@ -1,0 +1,123 @@
+# Основной фон и текст редактора
+"ui.background" = { fg = "#3b3b3b", bg = "#ffffff" }
+"ui.text" = "#3b3b3b"
+"ui.text.focus" = { fg = "#000000", bg = "#e8e8e8", modifiers = ["bold"] }
+"ui.text.inactive" = "#868686"
+
+# Курсор (синий прямоугольник)
+"ui.cursor" = { bg = "#005fb8" }
+"ui.cursor.primary" = { bg = "#005fb8" }
+"ui.cursor.match" = { modifiers = ["bold"] } # скобка-близнец жирным
+
+# Выделение
+"ui.selection" = { bg = "#add6ff" }
+"ui.selection.primary" = { bg = "#add6ff" }
+
+# Область gutter (фон как у редактора, текст под цвет номеров строк)
+"ui.gutter" = { fg = "#6e7681", bg = "#ffffff" }
+"ui.linenr" = "#6e7681"
+"ui.linenr.selected" = "#171184"
+
+# Строка состояния
+"ui.statusline" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.statusline.inactive" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.statusline.normal" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.statusline.insert" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.statusline.select" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+
+# Вкладки (буферы)
+"ui.bufferline" = { fg = "#868686", bg = "#f8f8f8" }
+"ui.bufferline.active" = { fg = "#3b3b3b", bg = "#ffffff", modifiers = [
+    "bold",
+] }
+"ui.bufferline.background" = { bg = "#f8f8f8" }
+
+# Всплывающие окна
+"ui.popup" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.help" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.menu" = { fg = "#3b3b3b", bg = "#f8f8f8" }
+"ui.menu.selected" = { fg = "#000000", bg = "#e8e8e8" }
+
+# Разделители окон
+"ui.window" = "#e5e5e5"
+
+# Направляющие отступов и линейки
+"ui.virtual.indent-guide" = "#d3d3d3"
+"ui.virtual.ruler" = "#d3d3d3"
+"ui.virtual.wrap" = "#e5e5e5"
+
+# Подсветка активной строки (лёгкий серый, как в VS Code)
+"ui.cursorline.primary" = { bg = "#f5f5f5" }
+
+# Диагностика (подчёркивания ошибок и т.д.)
+"diagnostic.error" = { underline = { color = "#f85149", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "#bf8803", style = "curl" } }
+"diagnostic.info" = { underline = { color = "#0063d3", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "#6e7681", style = "curl" } }
+error = "#f85149"
+warning = "#bf8803"
+info = "#0063d3"
+hint = "#6e7681"
+
+# Diff (изменения)
+"diff.plus" = "#098658"
+"diff.minus" = "#A31515"
+"diff.delta" = "#0451A5"
+"diff.plus.gutter" = "#2ea043"
+"diff.minus.gutter" = "#f85149"
+"diff.delta.gutter" = "#005fb8"
+
+# ============================================
+# Подсветка синтаксиса
+# ============================================
+"comment" = "#008000"
+"constant.builtin" = "#0000FF"
+"constant.numeric" = "#098658"
+
+"string" = "#A31515"
+"string.regexp" = "#811F3F"
+
+"keyword" = "#0000FF"
+"keyword.control" = "#AF00DB"
+"keyword.operator" = "#000000"
+"keyword.storage" = "#0000FF"
+"keyword.directive" = "#0000FF"
+
+"function" = "#795E26"
+"function.builtin" = "#795E26"
+"function.method" = "#795E26"
+"function.macro" = "#795E26"
+
+"type" = "#267F99"
+"type.enum.variant" = "#098658"
+"namespace" = "#267F99"
+
+"variable" = "#001080"
+"variable.builtin" = "#0000FF"
+"variable.other.member" = "#0451A5"
+"variable.parameter" = "#001080"
+
+"attribute" = "#E50000"
+"tag" = "#800000"
+"label" = "#800000"
+
+"punctuation" = "#000000"
+"punctuation.delimiter" = "#000000"
+"punctuation.bracket" = "#000000"
+"punctuation.special" = "#0000FF"
+
+"special" = "#000000"
+"embedded" = "#000000"
+
+"markup.heading" = { fg = "#800000", modifiers = ["bold"] }
+"markup.bold" = { fg = "#000080", modifiers = ["bold"] }
+"markup.italic" = { fg = "#800080", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.raw.inline" = "#800000"
+"markup.raw.block" = "#800000"
+"markup.link.url" = "#0063d3"
+"markup.link.label" = "#800000"
+"markup.list" = "#0451A5"
+"markup.quote" = "#0451A5"
+
+rainbow = ["#00ff00", "#00ff00", "#00ff00"]
