@@ -93,6 +93,7 @@ hint = "#6e7681"
 "function.macro" = "#795E26"
 
 "type" = "#267F99"
+"type.builtin" = "#0000FF"
 "constructor" = "#267F99"       # Error, String, Number и прочие с большой буквы
 "type.enum.variant" = "#098658"
 "namespace" = "#267F99"
