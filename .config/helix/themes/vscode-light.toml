@@ -7,7 +7,7 @@
 # Курсор (синий прямоугольник)
 "ui.cursor" = { bg = "#005fb8" }
 "ui.cursor.primary" = { bg = "#005fb8" }
-"ui.cursor.match" = { modifiers = ["bold"] } # скобка-близнец жирным
+"ui.cursor.match" = { modifiers = ["bold"] }
 
 # Выделение
 "ui.selection" = { bg = "#add6ff" }
@@ -49,17 +49,19 @@
 # Подсветка активной строки (лёгкий серый, как в VS Code)
 "ui.cursorline.primary" = { bg = "#f5f5f5" }
 
-# Диагностика (подчёркивания ошибок и т.д.)
+# Диагностика
 "diagnostic.error" = { underline = { color = "#f85149", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "#bf8803", style = "curl" } }
 "diagnostic.info" = { underline = { color = "#0063d3", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "#6e7681", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 error = "#f85149"
 warning = "#bf8803"
 info = "#0063d3"
 hint = "#6e7681"
 
-# Diff (изменения)
+# Diff
 "diff.plus" = "#098658"
 "diff.minus" = "#A31515"
 "diff.delta" = "#0451A5"
@@ -68,7 +70,7 @@ hint = "#6e7681"
 "diff.delta.gutter" = "#005fb8"
 
 # ============================================
-# Подсветка синтаксиса
+# Синтаксис
 # ============================================
 "comment" = "#008000"
 "constant.builtin" = "#0000FF"
@@ -79,9 +81,11 @@ hint = "#6e7681"
 
 "keyword" = "#0000FF"
 "keyword.control" = "#AF00DB"
-"keyword.operator" = "#000000"
+"keyword.operator" = "#0000FF"  # слово-операторы: instanceof, typeof и т.д.
 "keyword.storage" = "#0000FF"
 "keyword.directive" = "#0000FF"
+
+"operator" = "#000000" # символьные операторы: +, -, =, ==
 
 "function" = "#795E26"
 "function.builtin" = "#795E26"
@@ -89,6 +93,7 @@ hint = "#6e7681"
 "function.macro" = "#795E26"
 
 "type" = "#267F99"
+"constructor" = "#267F99"       # Error, String, Number и прочие с большой буквы
 "type.enum.variant" = "#098658"
 "namespace" = "#267F99"
 
