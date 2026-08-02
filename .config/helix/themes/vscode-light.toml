@@ -83,7 +83,7 @@ hint = "#6e7681"
 "keyword.control" = "#AF00DB"
 "keyword.operator" = "#0000FF"  # слово-операторы: instanceof, typeof и т.д.
 "keyword.storage" = "#0000FF"
-"keyword.directive" = "#0000FF"
+"keyword.directive" = "#AF00DB"
 
 "operator" = "#000000" # символьные операторы: +, -, =, ==
 
