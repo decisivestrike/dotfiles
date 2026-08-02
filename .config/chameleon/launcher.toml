@@ -6,7 +6,7 @@ terminal_cmd = "kitty"
 detach = false
 
 [wallpapers]
-path = "/home/inqlog/Pictures/backgrounds/unsorted"
+path = "/home/inqlog/Pictures/backgrounds/0-favorite"
 change_command = """
 awww img --transition-fps 120 \
   --transition-type center \
