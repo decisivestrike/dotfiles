@@ -3,7 +3,5 @@
 \.swp$
 \.bak$
 .*\.md
+.*\.png
 .gitignore
-
-# Other files
-vscode.css
