@@ -7,15 +7,14 @@
 ![Zsh](https://img.shields.io/badge/zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white)
 ![Starship](https://img.shields.io/badge/starship-%23DD0B78?style=for-the-badge&logo=starship&logoColor=white)
 
-_screenshots here_
+![preview](preview.png)
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/decisivestrike/dotfiles.git
-    mv dotfiles .dotfiles
+    git clone https://github.com/decisivestrike/dotfiles.git .dotfiles
     cd .dotfiles
 ```
 
