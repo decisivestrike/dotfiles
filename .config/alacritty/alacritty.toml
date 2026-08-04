@@ -1,12 +1,13 @@
+[general]
+import = ["~/.config/alacritty/themes/kanagawa_wave.toml"]
+ipc_socket = false
+
 [window]
 decorations = "None"
-padding = { x = 16, y = 12 }
+padding = { x = 10, y = 6 }
 dynamic_padding = true
 
 [font]
-size = 14
-normal = { family = "FiraCode Nerd Font", style = "Regular" }
-bold = { family = "FiraCode Nerd Font", style = "SemiBold" }
-
-[general]
-import = ["~/.config/alacritty/themes/kanagawa_wave.toml"]
+size = 14.5
+normal = { family = "Iosevka Nerd Font", style = "Medium" }
+bold = { family = "Iosevka Nerd Font", style = "SemiBold" }
