@@ -166,6 +166,7 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.lock": "json",
+    ".stow-local-ignore": "plaintext",
     "config": "shellscript"
   },
   "files.autoSave": "onFocusChange",
