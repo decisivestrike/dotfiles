@@ -56,6 +56,35 @@ bind(main_mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
 bind(main_mod .. " + T", hl.dsp.exec_cmd(terminal))
 
+-- Gamemode
+hl.bind(main_mod .. " + F1", function()
+	local game_mode = (hl.get_config("animations.enabled") == false)
+
+	if game_mode then
+		hl.exec_cmd("hyprctl reload")
+		return
+	end
+
+	hl.config({
+		general = {
+			gaps_in = 0,
+			gaps_out = 0,
+			border_size = 0,
+		},
+		animations = {
+			enabled = false,
+		},
+		input = {
+			kb_options = "grp:shifts_toggle",
+		},
+		decoration = {
+			shadow = { enabled = false },
+			blur = { enabled = false },
+			rounding = 0,
+		},
+	})
+end, { description = "Gamemode" })
+
 -- Pass
 bind(
 	main_mod .. " + F10",
