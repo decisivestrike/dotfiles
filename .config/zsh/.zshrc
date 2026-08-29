@@ -31,3 +31,6 @@ source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/bindings.zsh"
 source "$ZDOTDIR/fzf.zsh"
 source "$ZDOTDIR/prompt.zsh"
+
+# bun completions
+[ -s "/home/inqlog/.bun/_bun" ] && source "/home/inqlog/.bun/_bun"
