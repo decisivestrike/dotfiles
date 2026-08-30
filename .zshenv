@@ -17,12 +17,12 @@ if command -v bat >/dev/null 2>&1; then
   export MANPAGER="bat -l man -p"
 fi
 
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+
 # Path
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.lmstudio/bin:$PATH"
 export PATH="$HOME/.chameleon/bin:$PATH"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Bun
-export BUN_INSTALL="$HOME/.bun"
