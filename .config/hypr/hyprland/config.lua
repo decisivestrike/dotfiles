@@ -13,7 +13,7 @@ hl.config({
 		allow_tearing = false,
 	},
 	decoration = {
-		rounding = 4,
+		rounding = 8,
 		rounding_power = 4,
 		blur = {
 			enabled = true,
@@ -24,6 +24,7 @@ hl.config({
 			vibrancy = 1,
 			popups = true,
 			popups_ignorealpha = 0.3,
+			-- variant = "acrylic",
 		},
 		shadow = {
 			enabled = true,
