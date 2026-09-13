@@ -154,8 +154,12 @@ bind(main_mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 bind(main_mod .. " + SHIFT + S", window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
-bind(main_mod .. " + mouse_down", focus({ workspace = "r-1" }))
-bind(main_mod .. " + mouse_up", focus({ workspace = "r+1" }))
+-- bind(main_mod .. " + mouse_down", focus({ workspace = "r-1" }))
+-- bind(main_mod .. " + mouse_up", focus({ workspace = "r+1" }))
+
+-- Scroll through existing workspaces with mainMod + scroll
+bind(main_mod .. " + mouse_left", focus({ workspace = "r-1" }))
+bind(main_mod .. " + mouse_right", focus({ workspace = "r+1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 bind(main_mod .. " + mouse:272", window.drag(), { mouse = true })

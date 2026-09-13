@@ -44,11 +44,7 @@ hl.config({
 		kb_options = "caps:swapescape, grp:shifts_toggle",
 		follow_mouse = 1,
 		sensitivity = -0.9,
-		scroll_factor = 1,
-
-		touchpad = {
-			natural_scroll = true,
-		},
+		scroll_factor = 1.0,
 	},
 	misc = {
 		disable_hyprland_logo = true,
@@ -58,7 +54,7 @@ hl.config({
 		splash_font_family = "Iosevka Nerd Font",
 	},
 	binds = {
-		scroll_event_delay = 100,
+		scroll_event_delay = 200,
 		workspace_back_and_forth = false,
 		allow_workspace_cycles = false,
 		movefocus_cycles_fullscreen = false,
