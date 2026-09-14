@@ -1,8 +1,10 @@
 theme = "vscode-light"
 
 [editor]
-scrolloff = 3
+scrolloff = 6
 mouse = false
+scroll-lines = 1
+cursorline = true
 true-color = true
 undercurl = true
 line-number = "relative"
