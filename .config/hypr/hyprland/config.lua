@@ -44,7 +44,7 @@ hl.config({
 		kb_options = "caps:swapescape, grp:shifts_toggle",
 		follow_mouse = 1,
 		sensitivity = -0.9,
-		scroll_factor = 1.0,
+		scroll_factor = 1.5,
 	},
 	misc = {
 		disable_hyprland_logo = true,
