@@ -1,6 +1,6 @@
 local M = {}
 
-M.terminal = "kitty"
+M.terminal = "alacritty"
 M.file_manager = "nautilus"
 M.color_picker = "hyprpicker -a --format=rgb -t -d"
 

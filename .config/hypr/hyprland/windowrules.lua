@@ -32,7 +32,7 @@ hl.window_rule({
 
 hl.window_rule({
 	name = "terminal-border",
-	match = { class = "(kitty|com.mitchellh.ghostty)" },
+	match = { class = "(Alacritty|kitty|com.mitchellh.ghostty)" },
 
 	border_size = 1,
 })
