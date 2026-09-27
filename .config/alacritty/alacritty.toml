@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/themes/j.toml"]
+import = ["~/.config/alacritty/themes/myown.toml"]
 ipc_socket = false
 
 [window]
