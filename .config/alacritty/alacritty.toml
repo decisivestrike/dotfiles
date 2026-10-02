@@ -4,8 +4,8 @@ ipc_socket = false
 
 [window]
 decorations = "None"
-opacity = 0.9
-blur = true
+opacity = 1
+blur = false
 padding = { x = 12, y = 8 }
 dynamic_padding = true
 dynamic_title = false
