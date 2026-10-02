@@ -1,8 +1,10 @@
-theme = "vscode-light"
+theme = "ferra"
 
 [editor]
-scrolloff = 3
+scrolloff = 6
 mouse = false
+scroll-lines = 1
+cursorline = true
 true-color = true
 undercurl = true
 line-number = "relative"
@@ -16,7 +18,7 @@ select = "underline"
 
 [editor.indent-guides]
 render = true
-character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏"
 
 [editor.file-picker]
 hidden = false
@@ -25,7 +27,7 @@ hidden = false
 focus-lost = true
 
 [editor.statusline]
-left = ["mode", "diagnostics", "version-control", "spinner"]
+left = ["mode", "diagnostics", "spinner"]
 center = []
 right = ["position", "total-line-numbers", "file-encoding", "file-type"]
 separator = "│"
@@ -35,9 +37,5 @@ mode.select = "SELECT"
 diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
 
-
-### KEYS ###
 [keys.normal]
-# ";" = "command_mode"
 C-s = ":write"
-C-g = [":new", ":insert-output lazygit", ":buffer-close", ":redraw"]

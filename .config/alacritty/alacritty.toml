@@ -1,13 +1,30 @@
 [general]
-import = ["~/.config/alacritty/themes/kanagawa_wave.toml"]
+import = ["~/.config/alacritty/ferra.toml"]
 ipc_socket = false
 
 [window]
 decorations = "None"
-padding = { x = 10, y = 6 }
+opacity = 0.9
+blur = true
+padding = { x = 12, y = 8 }
 dynamic_padding = true
+dynamic_title = false
+
+[scrolling]
+history = 10000
+multiplier = 2
 
 [font]
-size = 14.5
-normal = { family = "Iosevka Nerd Font", style = "Medium" }
-bold = { family = "Iosevka Nerd Font", style = "SemiBold" }
+size = 15.5
+normal = { family = "CaskaydiaMono Nerd Font", style = "Medium" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "SemiBold" }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 500
+
+[mouse]
+hide_when_typing = true

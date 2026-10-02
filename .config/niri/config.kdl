@@ -1,0 +1,70 @@
+include "binds.kdl"
+include "layout.kdl"
+
+spawn-at-startup "awww-daemon"
+spawn-at-startup "waybar"
+
+spawn-sh-at-startup "/home/striker/.chameleon/bin/chameleon-launcher -s ~/.config/chameleon/themes/material.css"
+
+environment {
+    XDG_SESSION_TYPE "wayland"
+
+    QT_QPA_PLATFORM "wayland"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+    GDK_BACKEND "wayland"
+}
+
+cursor {
+    hide-when-typing
+}
+
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "caps:swapescape, grp:shifts_toggle"
+        }
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+output "eDP-1" {
+    mode "1920x1080@60"
+    scale 1
+    focus-at-startup
+}
+
+blur {
+    passes 3
+}
+
+hotkey-overlay {
+    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
+    // skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    // slowdown 3.0
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    match app-id="firefox$" title="^Picture-in-Picture$"
+    open-floating true
+}
+

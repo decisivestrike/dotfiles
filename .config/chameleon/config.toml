@@ -1,2 +1,0 @@
-modules = ["panel", "launcher", "notifications"]
-theme = "material"

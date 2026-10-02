@@ -1,0 +1,25 @@
+* {
+    all: unset;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 18px;
+    font-family: Iosevka Nerd Font Propo;
+    color: #d1d1e0;
+    background-color: #2b292d;
+    font-weight: 500;
+}
+
+/* window {} */
+
+#workspaces button {
+    margin: 5px 0px;
+}
+
+#clock {
+    margin-right: 12px;
+}
+
+#workspaces {
+    margin-left: 12px;
+}
