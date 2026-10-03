@@ -1,0 +1,143 @@
+:root {
+    /* Dark neutrals */
+    --color-night: #2b292d;
+    --color-ash: #383539;
+    --color-umber: #4d424b;
+    --color-bark: #6f5d63;
+
+    /* Light neutrals */
+    --color-mist: #d1d1e0;
+    --color-sage: #b1b695;
+
+    /* Warm / accent */
+    --color-blush: #fecdb2;
+    --color-coral: #ffa07a;
+    --color-rose: #f6b6c9;
+    --color-ember: #e06b75;
+    --color-honey: #f5d76e;
+}
+
+* {
+    all: unset;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    color: var(--color-mist);
+    font-family: "Iosevka Nerd Font Propo";
+}
+
+#launcher {
+    padding: 12px;
+    background-color: var(--color-night);
+    border: 3px solid var(--color-coral);
+}
+
+#launcher-window {
+    background-color: transparent;
+
+    /* This padding fixes ghosting */
+    padding: 1px;
+}
+
+scrolledwindow scrollbar {
+    background-color: transparent;
+}
+
+scrolledwindow scrollbar slider {
+    background-color: var(--color-bark);
+    border-radius: 10px;
+    min-width: 6px;
+}
+
+/* Entry */
+#searchbar {
+    font-size: 17px;
+    background-color: alpha(var(--color-ash), 0.5);
+    color: var(--color-mist);
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+/* Switcher */
+#switcher {
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+#switcher button {
+    margin: 0px;
+    padding: 4px 12px;
+    transition: padding 0.3s cubic-bezier(0.7, -0.5, 0.3, 3);
+}
+
+#switcher button:checked {
+    padding: 4px 16px;
+    font-weight: 600;
+    background-color: var(--color-bark);
+}
+
+listview {
+    padding: 4px;
+    background-color: var(--color-ash);
+}
+
+listview :selected .app {
+    background-color: var(--color-umber);
+}
+
+/* Not Found Page */
+#notfound {
+    padding: 48px 32px;
+    background-color: var(--color-ash);
+}
+
+#notfound-header {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+#notfound-comment {
+    font-size: 14px;
+}
+
+
+/* Applications */
+.app {
+    padding: 8px 12px;
+    margin: 2px 0px;
+}
+
+.app:hover {
+    background-color: var(--color-bark);
+}
+
+.app-name {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.app-comment {
+    font-size: 14px;
+}
+
+/* Wallpaper */
+#wallpaper {
+    margin: 4px;
+    padding: 4px 6px;
+}
+
+#wallpaper-picture {
+    margin-bottom: 6px;
+    box-shadow: 0px 1px 1px 1px alpha(black, 0.1);
+}
+
+gridview :selected #wallpaper {
+    background-color: var(--color-umber);
+}
+
+gridview :selected #wallpaper-name {
+    font-weight: 600;
+}
