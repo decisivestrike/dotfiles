@@ -161,7 +161,7 @@ binds {
 
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
-    Mod+R { switch-preset-column-width; }
+    Mod+R cooldown-ms=100 { switch-preset-column-width; }
 
     // Max width
     Mod+F { maximize-column; }
