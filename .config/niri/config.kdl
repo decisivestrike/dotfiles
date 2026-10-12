@@ -9,7 +9,6 @@ environment {
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 
     ELECTRON_OZONE_PLATFORM_HINT "wayland"
-    GDK_BACKEND "wayland"
 }
 
 cursor {

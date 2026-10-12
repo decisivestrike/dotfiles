@@ -2,11 +2,11 @@ searchbar_placeholder = "Search..."
 providers = ["applications", "wallpapers"]
 
 [applications]
-terminal_cmd = "kitty"
+terminal_cmd = "alacritty -e"
 detach = true
 
 [wallpapers]
-path = "/home/striker/Pictures/wallpapers"
+path = "/home/dan/Pictures/wallpapers"
 change_command = """
 awww img --transition-fps 60 \
   --transition-type center \
