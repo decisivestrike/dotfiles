@@ -1,10 +1,6 @@
 include "binds.kdl"
 include "layout.kdl"
-
-spawn-at-startup "awww-daemon"
-spawn-at-startup "waybar"
-
-spawn-sh-at-startup "/home/striker/.chameleon/bin/chameleon-launcher -s ~/.config/chameleon/themes/material.css"
+include "startup.kdl"
 
 environment {
     XDG_SESSION_TYPE "wayland"

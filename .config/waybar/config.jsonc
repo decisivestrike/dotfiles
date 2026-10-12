@@ -15,7 +15,7 @@
     "clock"
   ],
   "niri/workspaces": {
-    "format": "Лента №{value}",
+    "format": "Лента #{value}",
     "sort-by-number": true,
     "current-only": true
   },
@@ -44,8 +44,8 @@
   },
   "niri/language": {
     "format": "{}",
-    "format-ru": "Рус",
-    "format-en": "Анг"
+    "format-ru": "Ru",
+    "format-en": "Eng"
   },
   "network": {
     "format-wifi": "",

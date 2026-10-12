@@ -1,0 +1,3 @@
+spawn-at-startup "awww-daemon"
+
+spawn-sh-at-startup "/home/striker/.chameleon/bin/chameleon-launcher -s ~/.config/chameleon/themes/ferra.css"

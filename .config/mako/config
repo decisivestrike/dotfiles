@@ -23,8 +23,8 @@ on-notify=none
 font=CaskaydiaMono Nerd Font 12
 background-color=#2b292dFF
 text-color=#d1d1e0ff
-width=300
-height=100
+width=380
+height=120
 outer-margin=0
 margin=10
 

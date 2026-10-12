@@ -1,8 +1,10 @@
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod+E hotkey-overlay-title="Open a File explorer: nautilus" repeat=false { spawn "nautilus"; }
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" repeat=false { spawn "alacritty"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" repeat=false { spawn "hyprlock"; }
+    Super+Alt+W hotkey-overlay-title="Wlogout" repeat=false { spawn "wlogout" "-b" "4"; }
     Mod+Return hotkey-overlay-title="Toggle application launcher" repeat=false { spawn "/home/striker/.chameleon/bin/chameleon-launcher" "-t"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }

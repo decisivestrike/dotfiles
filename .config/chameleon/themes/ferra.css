@@ -23,11 +23,11 @@
     margin: 0px;
     border-radius: 0px;
     color: var(--color-mist);
-    font-family: "Iosevka Nerd Font Propo";
+    font-family: "CaskaydiaMono Nerd Font Propo";
 }
 
 #launcher {
-    padding: 12px;
+    padding: 16px;
     background-color: var(--color-night);
     border: 3px solid var(--color-coral);
 }
@@ -45,7 +45,7 @@ scrolledwindow scrollbar {
 
 scrolledwindow scrollbar slider {
     background-color: var(--color-bark);
-    border-radius: 10px;
+    border-radius: 0px;
     min-width: 6px;
 }
 
@@ -62,8 +62,8 @@ scrolledwindow scrollbar slider {
 /* Switcher */
 #switcher {
     font-size: 14px;
-    margin-bottom: 6px;
-    margin-top: 0px;
+    margin-bottom: 8px;
+    margin-top: 2px;
 }
 
 #switcher button {
@@ -79,7 +79,7 @@ scrolledwindow scrollbar slider {
 }
 
 listview {
-    padding: 4px;
+    padding: 0px;
     background-color: var(--color-ash);
 }
 
@@ -106,8 +106,8 @@ listview :selected .app {
 
 /* Applications */
 .app {
-    padding: 8px 12px;
-    margin: 2px 0px;
+    padding: 10px 12px;
+    margin: 0px;
 }
 
 .app:hover {
@@ -120,7 +120,7 @@ listview :selected .app {
 }
 
 .app-comment {
-    font-size: 14px;
+    font-size: 13.5px;
 }
 
 /* Wallpaper */
