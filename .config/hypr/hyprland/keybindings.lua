@@ -149,6 +149,10 @@ for i = 1, 10 do
 	hl.bind(main_mod .. " + SHIFT + " .. key, window.move({ workspace = i }))
 end
 
+-- Move active window silent
+bind(main_mod .. "+ PAGE_DOWN", window.move({ workspace = "r-1", follow = false }))
+bind(main_mod .. "+ PAGE_UP", window.move({ workspace = "r+1", follow = false }))
+
 -- Example special workspace (scratchpad)
 bind(main_mod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 bind(main_mod .. " + SHIFT + S", window.move({ workspace = "special:magic" }))
