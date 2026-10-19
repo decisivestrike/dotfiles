@@ -138,8 +138,8 @@ end
 
 bind(main_mod .. "+ CTRL + left", resize(-24, 0), { repeating = true })
 bind(main_mod .. "+ CTRL + right", resize(24, 0), { repeating = true })
-bind(main_mod .. "+ CTRL + up", resize(0, 24), { repeating = true })
-bind(main_mod .. "+ CTRL + down", resize(0, -24), { repeating = true })
+bind(main_mod .. "+ CTRL + up", resize(0, -24), { repeating = true })
+bind(main_mod .. "+ CTRL + down", resize(0, 24), { repeating = true })
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
