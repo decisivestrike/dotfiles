@@ -176,7 +176,7 @@ gridview :selected #wallpaper-name {
 #panel {
     font-size: 14.5px;
     color: var(--on-surface);
-    background-color: alpha(var(--surface-dim), 0.75);
+    background-color: var(--surface-container-low);
     border-radius: 0px;
     border-bottom: 1px solid alpha(var(--primary), 0.1);
 }
@@ -199,7 +199,7 @@ separator.vertical {
     margin: 4px 0 4px 12px;
     border-radius: 40px;
     padding: 2px 4px;
-    background-color: var(--surface-container-low);
+    background-color: var(--surface-container-lowest);
 }
 
 #workspaces label {
@@ -230,13 +230,13 @@ separator.vertical {
 }
 
 #workspaces label:not(.active):hover {
-    background-color: alpha(var(--secondary-container), 0.7);
+    background-color: var(--secondary-container);
     color: var(--on-secondary-container);
 }
 
 #clock {
     margin-right: 12px;
-    background-color: alpha(var(--primary-container), 0.3);
+    background-color: var(--secondary-container);
     padding: 0px 12px;
     border-radius: 12px;
     margin: 4px 0px;
@@ -254,7 +254,7 @@ separator.vertical {
 
 #player-window>box {
     padding: 8px;
-    background-color: alpha(var(--surface-container-low), 0.9);
+    background-color: var(--surface-container-low);
     border-radius: 12px;
     border: 1px solid alpha(var(--outline), 0.3);
 }
@@ -266,7 +266,7 @@ separator.vertical {
 }
 
 #player-content {
-    background-color: var(--surface-container);
+    background-color: var(--surface-container-high);
     border-radius: 6px;
     padding: 4px 8px;
     box-shadow: 0px 1px 1px 1px alpha(var(--shadow), 0.1);
@@ -284,13 +284,13 @@ separator.vertical {
     box-shadow: none;
     font-size: 18px;
     font-weight: 600;
-    color: var(--on-surface-container);
+    color: var(--on-surface);
 }
 
 #player-artist {
     box-shadow: none;
     font-size: 13px;
-    color: var(--on-surface-container);
+    color: var(--on-surface);
 }
 
 #player-buttons {
@@ -298,10 +298,13 @@ separator.vertical {
 }
 
 #player-buttons button {
-    color: var(--on-secondary-container);
-    background-color: var(--secondary-container);
     padding: 6px 12px;
     border-radius: 10px;
+    color: var(--on-surface);
+}
+
+#player-buttons button:hover {
+    color: var(--on-secondary-container);
 }
 
 /* ------------------- Уведомления ------------------- */
