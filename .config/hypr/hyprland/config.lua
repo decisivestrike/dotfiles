@@ -40,10 +40,11 @@ hl.config({
 		workspace_wraparound = false,
 	},
 	input = {
+		accel_profile = "flat",
 		kb_layout = "us,ru",
 		kb_options = "caps:swapescape, grp:shifts_toggle",
 		follow_mouse = 1,
-		sensitivity = -0.9,
+		sensitivity = -0.2,
 		scroll_factor = 1.5,
 	},
 	misc = {
