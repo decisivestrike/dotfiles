@@ -1,10 +1,10 @@
 [general]
-import = ["~/.config/alacritty/themes/myown.toml"]
+import = ["~/.config/alacritty/themes/kanagawa_wave.toml"]
 ipc_socket = false
 
 [window]
 decorations = "None"
-opacity = 0.9
+opacity = 0.95
 blur = true
 padding = { x = 12, y = 8 }
 dynamic_padding = false
