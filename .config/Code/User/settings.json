@@ -27,6 +27,9 @@
       "strings": true
     }
   },
+  "[glsl]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[go.mod]": {
     "editor.defaultFormatter": "golang.go"
   },
@@ -110,6 +113,10 @@
     },
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
+  "[wgsl]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  },
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.autoIndent": "keep",
@@ -159,19 +166,38 @@
   },
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "[Gruvbox Light Hard]": {
+      "textMateRules": [
+        {
+          "scope": ["punctuation.definition.comment"],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
   "extensions.autoCheckUpdates": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.lock": "json",
     ".stow-local-ignore": "plaintext",
     "config": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
+  "glsl-analyzer.path": "/home/inqlog/.config/Code/User/globalStorage/nolanderc.glsl-analyzer/glsl_analyzer_install/bin/glsl_analyzer",
+  "glsllint.supportedLangsWithStringLiterals": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "http.proxy": "socks5://127.0.0.1:10808",
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "js/ts.updateImportsOnPaste.enabled": true,
   "json.format.enable": true,
@@ -243,6 +269,7 @@
   "window.menuStyle": "custom",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
+  "workbench.activityBar.compact": true,
   "workbench.activityBar.location": "hidden",
   "workbench.browser.showInTitleBar": false,
   "workbench.colorCustomizations": {
@@ -255,8 +282,10 @@
   "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20
 }
