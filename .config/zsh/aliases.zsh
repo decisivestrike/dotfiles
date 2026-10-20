@@ -34,7 +34,6 @@ alias hx='helix'
 alias matrix="tmatrix --background=default -s 60 --fall-speed=0.1,0.2 --title='D E C I S I V E S T R I K E'"
 alias pipes='pipes.sh'
 alias bonsai='cbonsai'
-alias zj='zellij'
 
 # Commands
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
