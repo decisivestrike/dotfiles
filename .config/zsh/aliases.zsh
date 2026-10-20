@@ -10,6 +10,10 @@ alias gcp='git cherry-pick'
 alias grf='git reflog'
 alias gloga='git log --oneline --decorate --graph --all'
 
+# Herdr
+alias hsa='herdr session attach'
+alias hsl='herdr session list'
+
 # Better ls
 alias ls='eza --icons=always'
 alias l='eza -lh --icons=always --git'
