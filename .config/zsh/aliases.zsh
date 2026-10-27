@@ -11,13 +11,13 @@ alias grf='git reflog'
 alias gloga='git log --oneline --decorate --graph --all'
 
 # Better ls
-alias ls='eza --icons=always'
-alias l='eza -lh --icons=always --git'
-alias la='eza -ah --icons=always --git'
-alias lla='eza -lah --icons=always --git'
-alias lt='eza --icons=always --tree'
+alias ls='lsd'
+alias l='lsd -lh'
+alias la='lsd -ah'
+alias lla='lsd -lah'
+alias lt='lsd --tree'
 
-compdef eza=ls
+compdef lsd=ls
 
 # Core utils
 alias grep='rg --color=auto'
@@ -26,7 +26,6 @@ alias df='df -h'
 
 # Shortcuts
 alias ff='fastfetch'
-alias zj='zellij'
 
 # Commands
 alias update-grub='sudo grub2-mkconfig -o /boot/grub2/grub.cfg'
