@@ -27,7 +27,7 @@
 }
 
 #launcher {
-    padding: 16px;
+    padding: 18px;
     background-color: var(--color-night);
     border: 3px solid var(--color-coral);
 }
@@ -80,7 +80,7 @@ scrolledwindow scrollbar slider {
 
 listview {
     padding: 0px;
-    background-color: var(--color-ash);
+    /* background-color: var(--color-ash); */
 }
 
 listview :selected .app {
