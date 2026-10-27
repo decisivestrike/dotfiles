@@ -29,3 +29,19 @@
 ```bash
     stow .
 ```
+
+## Review
+
+### Shell
+
+zsh
+
+based on https://github.com/radleylewis/zsh
+
+| Key      | Action                                              |
+| -------- | --------------------------------------------------- |
+| `Ctrl+R` | Fuzzy history search (fzf)                          |
+| `Ctrl+T` | Fuzzy file search including hidden files (fzf + fd) |
+| `Ctrl+F` | Fuzzy file search excluding hidden files (fzf + fd) |
+| `Ctrl+→` | Move forward one word                               |
+| `Ctrl+←` | Move backward one word                              |
