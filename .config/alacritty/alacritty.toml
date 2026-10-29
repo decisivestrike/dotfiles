@@ -4,7 +4,7 @@ ipc_socket = false
 
 [window]
 decorations = "None"
-opacity = 0.95
+opacity = 0.8
 blur = true
 padding = { x = 12, y = 8 }
 dynamic_padding = false
