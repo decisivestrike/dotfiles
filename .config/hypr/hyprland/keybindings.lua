@@ -90,9 +90,10 @@ bind(
 	main_mod .. " + F10",
 	hl.dsp.pass({
 		window = "class:^(com\\.obsproject\\.Studio)$",
-	}, {
+	}),
+	{
 		description = "Start/Stop Recording",
-	})
+	}
 )
 bind(
 	main_mod .. " + M",
@@ -100,11 +101,12 @@ bind(
 		mods = "CTRL + SHIFT",
 		key = "M",
 		window = "class:^(discord)$",
-	}, {
+	}),
+	{
 		transparent = true,
 		submap_universal = true,
 		description = "Discord Mic",
-	})
+	}
 )
 
 bind(main_mod .. "+ RETURN", hl.dsp.exec_raw("~/.chameleon/bin/chameleon-launcher -t"))

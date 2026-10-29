@@ -17,14 +17,37 @@ hl.config({
 		rounding_power = 4,
 		blur = {
 			enabled = true,
-			size = 2,
-			passes = 3,
+
+			brightness = 0.5,
+			contrast = 0.9,
 			noise = 0.02,
-			contrast = 0.6,
-			vibrancy = 1,
+
+			vibrancy = 0.5,
+			vibrancy_darkness = 0.5,
+
+			passes = 2,
+			size = 10,
+
 			popups = true,
 			popups_ignorealpha = 0.3,
-			-- variant = "acrylic",
+
+			variant = "haze",
+			special = false,
+
+			acrylic = {
+				aberration = 0.05,
+				bulb = 8,
+				clarity = 0.1,
+				refraction = 48,
+				tint = "0x14EEF5FF",
+			},
+			aurora = {
+				intensity = 1,
+			},
+			haze = {
+				intensity = 0.5,
+				iridescence = 0.8,
+			},
 		},
 		shadow = {
 			enabled = true,
@@ -33,6 +56,16 @@ hl.config({
 			color = "rgba(22, 22, 22, 0.7)",
 			offset = { 0, 1 },
 			scale = 1.0,
+		},
+		motion_blur = {
+			enabled = true,
+			samples = 7,
+		},
+		wobble = {
+			damping = 24,
+			mass = 100,
+			intensity = 1,
+			enabled = false,
 		},
 	},
 	animations = {
