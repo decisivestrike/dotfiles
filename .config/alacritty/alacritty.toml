@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/ferra.toml"]
+import = ["~/.config/alacritty/nord.toml"]
 ipc_socket = false
 
 [window]
@@ -15,9 +15,9 @@ history = 10000
 multiplier = 2
 
 [font]
-size = 15.5
-normal = { family = "CaskaydiaMono Nerd Font", style = "Medium" }
-bold = { family = "CaskaydiaMono Nerd Font", style = "SemiBold" }
+size = 14
+normal = { family = "BlexMono Nerd Font Propo", style = "Medium" }
+bold = { family = "BlexMono Nerd Font Propo", style = "SemiBold" }
 
 [selection]
 save_to_clipboard = true

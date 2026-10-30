@@ -1,0 +1,62 @@
+onboarding = false
+
+[theme]
+name = "nord"
+auto_switch = false
+
+[theme.custom]
+surface_dim = "black" # Separator color
+
+[terminal]
+new_cwd = "follow"
+kitty_graphics = true
+
+[update]
+channel = "stable"
+
+[keys]
+prefix = "ctrl+b"
+
+[ui]
+mouse_capture = true
+copy_on_select = true
+mouse_scroll_lines = 3
+pane_scrollbars = true
+pane_gaps = true
+window_title = "{hostname}: {workspace}"
+agent_panel_sort = "spaces"
+status_indicators = "symbols"
+
+[ui.toast]
+# off = disable pop-up notifications
+# herdr = show in-app toasts
+# terminal = ask the outer terminal to show a desktop notification
+# system = ask the OS notification service directly
+delivery = "off"
+delay_seconds = 1
+
+[ui.toast.herdr]
+position = "bottom-right"
+
+[ui.toast.clipboard]
+enabled = true
+position = "bottom-center"
+
+[ui.sound]
+enabled = true
+
+[ui.sound.agents]
+droid = "off"
+
+[session]
+resume_agents_on_restore = true
+startup_per_agent_delay_ms = 100
+
+[remote]
+manage_ssh_config = true
+
+[experimental]
+pane_history = false
+
+[advanced]
+scrollback_limit_bytes = 1000000

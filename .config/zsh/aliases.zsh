@@ -10,14 +10,18 @@ alias gcp='git cherry-pick'
 alias grf='git reflog'
 alias gloga='git log --oneline --decorate --graph --all'
 
-# Better ls
-alias ls='lsd'
-alias l='lsd -lh'
-alias la='lsd -ah'
-alias lla='lsd -lah'
-alias lt='lsd --tree'
+# Herdr
+alias hsa='herdr session attach'
+alias hsl='herdr session list'
 
-compdef lsd=ls
+# Better ls
+alias ls='eza --icons=always'
+alias l='eza -lh --icons=always --git'
+alias la='eza -ah --icons=always --git'
+alias lla='eza -lah --icons=always --git'
+alias lt='eza --icons=always --tree'
+
+compdef eza=ls
 
 # Core utils
 alias grep='rg --color=auto'

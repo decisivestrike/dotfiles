@@ -19,17 +19,14 @@ layout {
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     focus-ring {
         off
-        width 3
-        active-color "#7fc8ff"
-        inactive-color "#505050"
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
     border {
         on
         width 3
-        active-color "#ffa07a"
-        inactive-color "#6f5d63"
+        active-color "#88C0D0"
+        inactive-color "#2E3440"
         urgent-color "#f5d76e"
     }
 

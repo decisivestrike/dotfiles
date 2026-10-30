@@ -32,3 +32,4 @@ source "$ZDOTDIR/prompt.zsh"
 
 # bun completions
 [ -s "/home/inqlog/.bun/_bun" ] && source "/home/inqlog/.bun/_bun"
+
