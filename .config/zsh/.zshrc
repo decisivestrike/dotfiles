@@ -22,7 +22,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # Fzf
-source /usr/share/fzf/shell/key-bindings.zsh
 source <(fzf --zsh)
 
 source "$ZDOTDIR/aliases.zsh"
@@ -32,4 +31,3 @@ source "$ZDOTDIR/prompt.zsh"
 
 # bun completions
 [ -s "/home/inqlog/.bun/_bun" ] && source "/home/inqlog/.bun/_bun"
-
