@@ -1,4 +1,4 @@
-theme = "ferra"
+theme = "nord"
 
 [editor]
 scrolloff = 6

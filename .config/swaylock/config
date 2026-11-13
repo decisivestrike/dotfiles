@@ -1,0 +1,68 @@
+ignore-empty-password
+show-failed-attempts
+show-keyboard-layout
+
+color=2e3440ff
+
+# Sets the color of backspace highlight segments
+bs-hl-color=b48eadff
+
+# Sets the color of backspace highlight segments when Caps Lock is active
+caps-lock-bs-hl-color=d08770ff
+
+# Sets the color of the key press highlight segments when Caps Lock is active
+caps-lock-key-hl-color=ebcb8bff
+
+# Sets the font of the text
+font=BlexMono Nerd Font
+
+# Sets the indicator radius (default: 50)
+indicator-radius=64
+
+# Sets the indicator thickness (default: 10)
+indicator-thickness=12
+
+# Sets the color of the inside of the indicator
+inside-color=2e3440ff
+
+# Sets the color of the inside of the indicator when cleared
+inside-clear-color=81a1c1ff
+
+# Sets the color of the inside of the indicator when verifying
+inside-ver-color=5e81acff
+
+# Sets the color of the inside of the indicator when invalid
+inside-wrong-color=bf616aff
+
+# Sets the color of key press highlight segments
+key-hl-color=a3be8cff
+
+# Sets the background color of the box containing the layout text
+layout-bg-color=2e3440ff
+
+# Sets the color of the outside of the indicator when typing or idle
+ring-color=3b4252ff
+
+# Sets the color of the outside of the indicator when cleared
+ring-clear-color=88c0d0ff
+
+# Sets the color of the outside of the indicator when verifying
+ring-ver-color=81a1c1ff
+
+# Sets the color of the outside of the indicator when invalid
+ring-wrong-color=d08770ff
+
+# Sets the color of the lines that separate highlight segments
+separator-color=3b4252ff
+
+# Sets the color of the text
+text-color=eceff4ff
+
+# Sets the color of the text when cleared
+text-clear-color=3b4252ff
+
+# Sets the color of the text when verifying
+text-ver-color=3b4252ff
+
+# Sets the color of the text when invalid
+text-wrong-color=3b4252ff

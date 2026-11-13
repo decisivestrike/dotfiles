@@ -1,20 +1,33 @@
 :root {
-    /* Dark neutrals */
-    --color-night: #2b292d;
-    --color-ash: #383539;
-    --color-umber: #4d424b;
-    --color-bark: #6f5d63;
+    /* Polar Night — тёмные нейтрали */
+    --nord0: #2E3440;
+    /* основной фон */
+    --nord1: #3B4252;
+    /* фон searchbar / notfound */
+    --nord2: #434C5E;
+    /* selected */
+    --nord3: #4C566A;
+    /* hover / slider / checked */
 
-    /* Light neutrals */
-    --color-mist: #d1d1e0;
-    --color-sage: #b1b695;
+    /* Snow Storm — светлые нейтрали */
+    --nord4: #D8DEE9;
+    /* основной текст */
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
 
-    /* Warm / accent */
-    --color-blush: #fecdb2;
-    --color-coral: #ffa07a;
-    --color-rose: #f6b6c9;
-    --color-ember: #e06b75;
-    --color-honey: #f5d76e;
+    /* Frost — холодные акценты */
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    /* рамка лаунчера */
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+
+    /* Aurora — тёплые акценты */
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
 }
 
 * {
@@ -22,21 +35,20 @@
     padding: 0px;
     margin: 0px;
     border-radius: 0px;
-    color: var(--color-mist);
-    font-family: "CaskaydiaMono Nerd Font Propo";
+    color: var(--nord4);
+    font-family: "BlexMono Nerd Font Propo";
 }
 
 #launcher {
     padding: 18px;
-    background-color: var(--color-night);
-    border: 3px solid var(--color-coral);
+    background-color: var(--nord0);
+    border: 3px solid var(--nord8);
 }
 
 #launcher-window {
     background-color: transparent;
-
-    /* This padding fixes ghosting */
     padding: 1px;
+    /* этот паддинг убирает ghosting */
 }
 
 scrolledwindow scrollbar {
@@ -44,7 +56,7 @@ scrolledwindow scrollbar {
 }
 
 scrolledwindow scrollbar slider {
-    background-color: var(--color-bark);
+    background-color: var(--nord3);
     border-radius: 0px;
     min-width: 6px;
 }
@@ -52,8 +64,8 @@ scrolledwindow scrollbar slider {
 /* Entry */
 #searchbar {
     font-size: 17px;
-    background-color: alpha(var(--color-ash), 0.5);
-    color: var(--color-mist);
+    background-color: alpha(var(--nord1), 0.5);
+    color: var(--nord4);
     padding: 8px 12px;
     margin-bottom: 8px;
     transition: all 0.2s ease;
@@ -75,22 +87,21 @@ scrolledwindow scrollbar slider {
 #switcher button:checked {
     padding: 4px 16px;
     font-weight: 600;
-    background-color: var(--color-bark);
+    background-color: var(--nord3);
 }
 
 listview {
     padding: 0px;
-    /* background-color: var(--color-ash); */
 }
 
 listview :selected .app {
-    background-color: var(--color-umber);
+    background-color: var(--nord2);
 }
 
 /* Not Found Page */
 #notfound {
     padding: 48px 32px;
-    background-color: var(--color-ash);
+    background-color: var(--nord1);
 }
 
 #notfound-header {
@@ -103,7 +114,6 @@ listview :selected .app {
     font-size: 14px;
 }
 
-
 /* Applications */
 .app {
     padding: 10px 12px;
@@ -111,7 +121,7 @@ listview :selected .app {
 }
 
 .app:hover {
-    background-color: var(--color-bark);
+    background-color: var(--nord3);
 }
 
 .app-name {
@@ -135,7 +145,7 @@ listview :selected .app {
 }
 
 gridview :selected #wallpaper {
-    background-color: var(--color-umber);
+    background-color: var(--nord2);
 }
 
 gridview :selected #wallpaper-name {

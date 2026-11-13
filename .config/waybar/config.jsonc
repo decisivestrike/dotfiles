@@ -15,7 +15,7 @@
     "clock"
   ],
   "niri/workspaces": {
-    "format": "Лента #{value}",
+    "format": "Лента {value}",
     "sort-by-number": true,
     "current-only": true
   },
