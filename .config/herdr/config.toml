@@ -5,7 +5,7 @@ name = "kanagawa"
 auto_switch = false
 
 [theme.custom]
-surface_dim = "cyan" # Separator color
+surface_dim = "#51524d" # Separator color
 
 [terminal]
 new_cwd = "follow"
