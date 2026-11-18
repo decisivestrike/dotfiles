@@ -30,13 +30,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "terminal-border",
-	match = { class = "(Alacritty|kitty|com.mitchellh.ghostty)" },
-
-	border_size = 1,
-})
-
-hl.window_rule({
 	name = "steam",
 	match = { class = "steam" },
 

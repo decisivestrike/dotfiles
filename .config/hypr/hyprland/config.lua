@@ -51,10 +51,10 @@ hl.config({
 		},
 		shadow = {
 			enabled = true,
-			range = 8,
-			render_power = 3,
-			color = "rgba(22, 22, 22, 0.7)",
-			offset = { 0, 1 },
+			range = 12,
+			render_power = 4,
+			color = "rgba(0, 0, 0, 0.15)",
+			offset = { 0, 0 },
 			scale = 1.0,
 		},
 		motion_blur = {
